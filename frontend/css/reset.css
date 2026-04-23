@@ -1,0 +1,72 @@
+/* ────────────────────────────────────────────────────────────────────────────
+   reset.css — Ova Vanilla
+   Reset moderne : neutralise les styles navigateur sans casser l'héritage
+   ──────────────────────────────────────────────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Éléments de bloc multimédia */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Héritage de la font sur les éléments de formulaire */
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Gestion du débordement de texte */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Liens : pas de style par défaut */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Listes : pas de style par défaut */
+ul, ol {
+  list-style: none;
+}
+
+/* Boutons : reset */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Focus visible : accessibilité clavier */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Sélection de texte */
+::selection {
+  background-color: var(--gold);
+  color: var(--paper);
+}

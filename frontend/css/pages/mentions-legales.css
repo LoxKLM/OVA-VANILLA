@@ -1,0 +1,128 @@
+/* ────────────────────────────────────────────────────────────────────────────
+   pages/mentions-legales.css — Ova Vanilla
+   ──────────────────────────────────────────────────────────────────────────── */
+
+.mentions-main {
+  background-color: var(--paper);
+  padding: calc(var(--space-section) + var(--nav-height)) 0 var(--space-section);
+  min-height: 70vh;
+}
+
+.mentions-header {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--gold-20);
+}
+
+.mentions-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  color: var(--deep);
+  margin-bottom: 8px;
+}
+
+.mentions-date {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--deep);
+  opacity: 0.45;
+}
+
+.mentions-content {
+  max-width: 720px;
+}
+
+.mentions-section {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--gold-20);
+}
+
+.mentions-section:last-child {
+  border-bottom: none;
+}
+
+.mentions-section__titre {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+.mentions-section__sous-titre {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: 0.04em;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.mentions-section p {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 300;
+  color: var(--deep);
+  opacity: 0.85;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.mentions-section p:last-child {
+  margin-bottom: 0;
+}
+
+.mentions-section a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+.mentions-section a:hover {
+  color: var(--gold);
+}
+
+.mentions-liste {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+
+.mentions-liste li {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 300;
+  color: var(--deep);
+  opacity: 0.85;
+  line-height: 1.7;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--gold-20);
+}
+
+.mentions-liste li:last-child {
+  border-bottom: none;
+}
+
+.mentions-back {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-sm);
+}
+
+.mentions-back .link-arrow {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--ink);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.mentions-back .link-arrow:hover {
+  color: var(--gold);
+}

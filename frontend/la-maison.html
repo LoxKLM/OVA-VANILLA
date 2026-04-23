@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>La Maison — Ova Vanilla, Négoce de Vanille Gourmet | Marseille</title>
+  <meta name="description" content="Ova Vanilla est une maison de négoce marseillaise spécialisée dans l'import de vanille Gourmet de Madagascar. Découvrez notre histoire, nos engagements et notre vision du commerce équitable.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ovavanilla.fr/la-maison.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="La Maison — Ova Vanilla | Marseille">
+  <meta property="og:description" content="Une maison de négoce marseillaise engagée dans l'import direct de vanille Gourmet de Madagascar.">
+  <meta property="og:image" content="https://ovavanilla.fr/assets/og-image.jpg">
+  <meta property="og:url" content="https://ovavanilla.fr/la-maison.html">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Ova Vanilla">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="alternate icon" href="./assets/favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages/la-maison.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Ova Vanilla",
+    "url": "https://ovavanilla.fr",
+    "logo": "https://ovavanilla.fr/assets/logo.png",
+    "telephone": "[TELEPHONE]",
+    "email": "[EMAIL_PRO]",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Marseille",
+      "addressCountry": "FR"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header class="nav" id="nav" role="banner">
+  <a href="./index.html" class="nav__logo" aria-label="Ova Vanilla — Accueil">
+    <img src="./assets/logo.png" alt="Ova Vanilla" width="160" height="40" loading="eager">
+  </a>
+  <nav class="nav__links" aria-label="Navigation principale">
+    <a href="./la-maison.html"      class="nav__link nav__link--active">La Maison</a>
+    <a href="./nos-vanilles.html"   class="nav__link">Nos Vanilles</a>
+    <a href="./origines.html"       class="nav__link">Origines</a>
+    <a href="./professionnels.html" class="nav__link">Professionnels</a>
+    <a href="./contact.html"        class="nav__link">Contact</a>
+  </nav>
+  <div class="nav__right">
+    <div class="nav__lang-switcher" role="navigation" aria-label="Langue">
+      <button class="nav__lang nav__lang--active" onclick="switchLang('fr')" aria-label="Français">FR</button>
+      <span class="nav__lang-sep" aria-hidden="true">/</span>
+      <button class="nav__lang" onclick="switchLang('en')" aria-label="English">EN</button>
+    </div>
+    <a href="./professionnels.html#devis" class="btn btn--nav">Demander un devis ↗</a>
+    <button class="nav__burger" id="nav-burger"
+            aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-mobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav__mobile" id="nav-mobile" role="dialog" aria-modal="true" aria-label="Menu">
+  <a href="./la-maison.html"      class="nav__mobile-link">La Maison</a>
+  <a href="./nos-vanilles.html"   class="nav__mobile-link">Nos Vanilles</a>
+  <a href="./origines.html"       class="nav__mobile-link">Origines</a>
+  <a href="./professionnels.html" class="nav__mobile-link">Professionnels</a>
+  <a href="./contact.html"        class="nav__mobile-link">Contact</a>
+  <a href="./professionnels.html#devis" class="btn btn--primary btn--lg" style="margin-top:16px">
+    Demander un devis ↗
+  </a>
+  <div class="nav__mobile-lang">
+    <button class="nav__lang nav__lang--active" onclick="switchLang('fr')">FR</button>
+    <span class="nav__lang-sep" aria-hidden="true">/</span>
+    <button class="nav__lang" onclick="switchLang('en')">EN</button>
+  </div>
+</div>
+
+
+<!-- HERO PAGE -->
+<section class="page-hero" aria-label="La Maison Ova Vanilla">
+  <div class="page-hero__bg" aria-hidden="true">
+    <img src="./assets/photos/marseille-port.jpg"
+         alt="Vue du Vieux-Port de Marseille"
+         loading="eager" fetchpriority="high">
+  </div>
+  <div class="container">
+    <div class="page-hero__content">
+      <p class="page-hero__eyebrow">Marseille — Fondée 2023</p>
+      <h1 class="page-hero__title">
+        Une maison<br>
+        <em>de négoce.</em>
+      </h1>
+      <p class="page-hero__subtitle">
+        Ova Vanilla est une maison marseillaise spécialisée dans l'import direct
+        de vanille Gourmet depuis les coopératives de la Sava, à Madagascar.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION 1 — HISTOIRE -->
+<section class="section section--paper maison-histoire" aria-labelledby="histoire-titre">
+  <div class="container">
+    <div class="maison-split">
+
+      <div class="maison-split__visual fade-up">
+        <div class="maison-photo-frame">
+          <img src="./assets/photos/maison-portrait.jpg"
+               alt="Fondateur Ova Vanilla — Marseille"
+               loading="lazy"
+               onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="maison-split__text fade-up fade-up--d1">
+        <span class="section__label">Notre histoire</span>
+        <h2 class="section__title" id="histoire-titre">
+          De Marseille<br>à la Sava.
+        </h2>
+        <p class="t-body">
+          Ova Vanilla naît d'un constat simple : la chaîne d'approvisionnement
+          de la vanille est trop longue. Entre le producteur malgache et le pâtissier
+          marseillais, il existe parfois quatre à cinq intermédiaires, chacun prélevant
+          une marge qui érode la qualité finale et la juste rémunération du producteur.
+        </p>
+        <p class="t-body">
+          Nous avons choisi l'approche directe. Des partenariats avec les coopératives
+          de Sambava, un contrôle qualité réalisé sur place avant embarquement,
+          et un stockage à Marseille permettant des délais de livraison sous cinq jours.
+        </p>
+        <p class="t-body">
+          Le nom Ova — « œuf » en malgache — évoque la gousse avant floraison,
+          la promesse d'un arôme encore enfermé.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION 2 — VALEURS -->
+<section class="section section--cream maison-valeurs" aria-labelledby="valeurs-titre">
+  <div class="container">
+
+    <div class="maison-valeurs__header fade-up">
+      <span class="section__label">Nos engagements</span>
+      <h2 class="section__title" id="valeurs-titre">
+        Ce qui nous<br>distingue.
+      </h2>
+    </div>
+
+    <div class="maison-valeurs__grille">
+
+      <div class="maison-valeur fade-up fade-up--d1">
+        <div class="maison-valeur__icone" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+        </div>
+        <h3 class="maison-valeur__titre">Import direct</h3>
+        <p class="maison-valeur__texte">
+          Aucun intermédiaire entre la coopérative malgache et notre entrepôt marseillais.
+          La qualité est préservée, le prix est juste pour le producteur.
+        </p>
+      </div>
+
+      <div class="maison-valeur fade-up fade-up--d2">
+        <div class="maison-valeur__icone" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round">
+            <path d="M9 12l2 2 4-4"/>
+            <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>
+          </svg>
+        </div>
+        <h3 class="maison-valeur__titre">Traçabilité totale</h3>
+        <p class="maison-valeur__texte">
+          Chaque lot porte un numéro de référence (ex. SV-254) lié à une récolte,
+          une zone géographique et une date de contrôle qualité précise.
+        </p>
+      </div>
+
+      <div class="maison-valeur fade-up fade-up--d3">
+        <div class="maison-valeur__icone" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round">
+            <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10"/>
+          </svg>
+        </div>
+        <h3 class="maison-valeur__titre">Stock permanent</h3>
+        <p class="maison-valeur__texte">
+          Contrairement à la saisonnalité de nombreux négoces, nous maintenons
+          un stock permanent à Marseille. Livraison sous 5 jours ouvrés sur toute la France.
+        </p>
+      </div>
+
+      <div class="maison-valeur fade-up fade-up--d1">
+        <div class="maison-valeur__icone" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 8v4l3 3"/>
+          </svg>
+        </div>
+        <h3 class="maison-valeur__titre">Réactivité B2B</h3>
+        <p class="maison-valeur__texte">
+          Devis sous 24 heures. Commandes à partir de 500 g.
+          Tarifs dégressifs selon le volume. Interlocuteur dédié pour les comptes réguliers.
+        </p>
+      </div>
+
+      <div class="maison-valeur fade-up fade-up--d2">
+        <div class="maison-valeur__icone" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <h3 class="maison-valeur__titre">Marseille, port d'attache</h3>
+        <p class="maison-valeur__texte">
+          Notre ancrage marseillais n'est pas un hasard. La ville est historiquement
+          le premier port de commerce avec Madagascar. Cette proximité logistique
+          est un avantage compétitif réel.
+        </p>
+      </div>
+
+      <div class="maison-valeur fade-up fade-up--d3">
+        <div class="maison-valeur__icone" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <h3 class="maison-valeur__titre">Partenariat durable</h3>
+        <p class="maison-valeur__texte">
+          Nos relations avec les coopératives de la Sava reposent sur des contrats
+          pluriannuels. Sécurité pour le producteur, régularité pour nos clients professionnels.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION 3 — CHIFFRES -->
+<section class="maison-chiffres" aria-label="Ova Vanilla en chiffres">
+  <div class="maison-chiffres__bg" aria-hidden="true">
+    <img src="./assets/photos/gousses-detail.jpg"
+         alt="Détail gousses de vanille noire"
+         loading="lazy"
+         onerror="this.style.display='none'">
+  </div>
+  <div class="container">
+    <div class="maison-chiffres__inner">
+
+      <div class="maison-chiffre fade-up">
+        <span class="maison-chiffre__val">2025</span>
+        <span class="maison-chiffre__label">Récolte en cours</span>
+      </div>
+
+      <div class="maison-chiffre__sep" aria-hidden="true"></div>
+
+      <div class="maison-chiffre fade-up fade-up--d1">
+        <span class="maison-chiffre__val">17 cm</span>
+        <span class="maison-chiffre__label">Grade Gourmet minimum</span>
+      </div>
+
+      <div class="maison-chiffre__sep" aria-hidden="true"></div>
+
+      <div class="maison-chiffre fade-up fade-up--d2">
+        <span class="maison-chiffre__val">J + 5</span>
+        <span class="maison-chiffre__label">Délai de livraison</span>
+      </div>
+
+      <div class="maison-chiffre__sep" aria-hidden="true"></div>
+
+      <div class="maison-chiffre fade-up fade-up--d3">
+        <span class="maison-chiffre__val">500 g</span>
+        <span class="maison-chiffre__label">Commande minimum</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION 4 — CTA -->
+<section class="section section--paper maison-cta-section" aria-label="Prendre contact">
+  <div class="container">
+    <div class="maison-cta fade-up">
+      <h2 class="maison-cta__title">
+        Vous cherchez un fournisseur<br>
+        <em>de confiance&nbsp;?</em>
+      </h2>
+      <p class="maison-cta__text">
+        Commencez par un échantillon gratuit. Nous vous envoyons 10 g de Gourmet TK Noire
+        pour que vous puissiez évaluer la qualité avant toute commande.
+      </p>
+      <div class="maison-cta__btns">
+        <a href="./professionnels.html#echantillon" class="btn btn--primary btn--lg">
+          Demander un échantillon
+        </a>
+        <a href="./nos-vanilles.html" class="btn btn--outline">
+          Voir la gamme →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <img src="./assets/logo-white.png" alt="Ova Vanilla" class="footer__brand-logo" width="130" height="38">
+        <p class="footer__tagline">De la Sava aux maisons de bouche.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/ovavanilla"
+             target="_blank" rel="noopener noreferrer"
+             class="footer__social-link" aria-label="Instagram @ovavanilla">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__col-title">Navigation</p>
+        <nav class="footer__nav" aria-label="Navigation pied de page">
+          <a href="./la-maison.html"      class="footer__nav-link">La Maison</a>
+          <a href="./nos-vanilles.html"   class="footer__nav-link">Nos Vanilles</a>
+          <a href="./origines.html"        class="footer__nav-link">Origines</a>
+          <a href="./professionnels.html" class="footer__nav-link">Professionnels</a>
+          <a href="./contact.html"         class="footer__nav-link">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <p class="footer__col-title">La Gamme</p>
+        <nav class="footer__nav" aria-label="Gamme produits">
+          <a href="./nos-vanilles.html#tk-noire" class="footer__nav-link">Gourmet TK Noire</a>
+          <a href="./nos-vanilles.html#split"    class="footer__nav-link">Split Gourmet</a>
+          <a href="./nos-vanilles.html#poudre"   class="footer__nav-link">Poudre de Vanille</a>
+          <a href="./nos-vanilles.html#extrait"  class="footer__nav-link">Extrait Naturel</a>
+        </nav>
+      </div>
+      <div>
+        <p class="footer__col-title">Contact</p>
+        <div class="footer__contact-row">
+          <span class="footer__contact-label">Adresse</span>
+          <span class="footer__contact-value">[ADRESSE_MARSEILLE]</span>
+        </div>
+        <div class="footer__contact-row">
+          <span class="footer__contact-label">Téléphone</span>
+          <span class="footer__contact-value">[TELEPHONE]</span>
+        </div>
+        <div class="footer__contact-row">
+          <span class="footer__contact-label">Email</span>
+          <span class="footer__contact-value">[EMAIL_PRO]</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 Ova Vanilla — Tous droits réservés</p>
+      <div class="footer__legal-links">
+        <a href="./mentions-legales.html" class="footer__legal-link">Mentions légales</a>
+        <a href="./mentions-legales.html#confidentialite" class="footer__legal-link">Politique de confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- SCRIPTS -->
+<script src="./js/lang.js"></script>
+<script src="./js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+# Environnement Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Variables d'environnement — NE JAMAIS VERSIONNER
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+deploy.log
+*.log.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Node (si utilisé ponctuellement)
+node_modules/
+npm-debug.log
+
+# Fichiers temporaires
+tmp/
+*.tmp
+*.bak
+*.orig
+
+# Passenger
+tmp/restart.txt

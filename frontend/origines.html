@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Origines — Vanille de la Sava, Madagascar | Ova Vanilla</title>
+  <meta name="description" content="Découvrez l'origine de notre vanille : la région Sava de Madagascar, berceau du Vanilla planifolia. Terroir, méthode de culture et traçabilité directe auprès des coopératives.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ovavanilla.fr/origines.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Origines — Vanille de la Sava | Ova Vanilla">
+  <meta property="og:description" content="La région Sava de Madagascar, berceau mondial du Vanilla planifolia. Terroir volcanique, savoirs ancestraux, traçabilité directe.">
+  <meta property="og:image" content="https://ovavanilla.fr/assets/og-image.jpg">
+  <meta property="og:url" content="https://ovavanilla.fr/origines.html">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Ova Vanilla">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="alternate icon" href="./assets/favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages/origines.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Ova Vanilla",
+    "url": "https://ovavanilla.fr",
+    "logo": "https://ovavanilla.fr/assets/logo.png",
+    "telephone": "[TELEPHONE]",
+    "email": "[EMAIL_PRO]",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Marseille",
+      "addressCountry": "FR"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header class="nav" id="nav" role="banner">
+  <a href="./index.html" class="nav__logo" aria-label="Ova Vanilla — Accueil">
+    <img src="./assets/logo.png" alt="Ova Vanilla" width="160" height="40" loading="eager">
+  </a>
+  <nav class="nav__links" aria-label="Navigation principale">
+    <a href="./la-maison.html"      class="nav__link">La Maison</a>
+    <a href="./nos-vanilles.html"   class="nav__link">Nos Vanilles</a>
+    <a href="./origines.html"       class="nav__link nav__link--active">Origines</a>
+    <a href="./professionnels.html" class="nav__link">Professionnels</a>
+    <a href="./contact.html"        class="nav__link">Contact</a>
+  </nav>
+  <div class="nav__right">
+    <div class="nav__lang-switcher" role="navigation" aria-label="Langue">
+      <button class="nav__lang nav__lang--active" onclick="switchLang('fr')" aria-label="Français">FR</button>
+      <span class="nav__lang-sep" aria-hidden="true">/</span>
+      <button class="nav__lang" onclick="switchLang('en')" aria-label="English">EN</button>
+    </div>
+    <a href="./professionnels.html#devis" class="btn btn--nav">Demander un devis ↗</a>
+    <button class="nav__burger" id="nav-burger"
+            aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-mobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav__mobile" id="nav-mobile" role="dialog" aria-modal="true" aria-label="Menu">
+  <a href="./la-maison.html"      class="nav__mobile-link">La Maison</a>
+  <a href="./nos-vanilles.html"   class="nav__mobile-link">Nos Vanilles</a>
+  <a href="./origines.html"       class="nav__mobile-link">Origines</a>
+  <a href="./professionnels.html" class="nav__mobile-link">Professionnels</a>
+  <a href="./contact.html"        class="nav__mobile-link">Contact</a>
+  <a href="./professionnels.html#devis" class="btn btn--primary btn--lg" style="margin-top:16px">
+    Demander un devis ↗
+  </a>
+  <div class="nav__mobile-lang">
+    <button class="nav__lang nav__lang--active" onclick="switchLang('fr')">FR</button>
+    <span class="nav__lang-sep" aria-hidden="true">/</span>
+    <button class="nav__lang" onclick="switchLang('en')">EN</button>
+  </div>
+</div>
+
+
+<!-- HERO PAGE -->
+<section class="page-hero" aria-label="Origines de la vanille Ova Vanilla">
+  <div class="page-hero__bg" aria-hidden="true">
+    <img src="./assets/photos/origines-sava.jpg"
+         alt="Plantation de vanille dans la région Sava, Madagascar"
+         loading="eager" fetchpriority="high">
+  </div>
+  <div class="container">
+    <div class="page-hero__content">
+      <p class="page-hero__eyebrow">Madagascar · Région Sava</p>
+      <h1 class="page-hero__title">
+        À la source<br>
+        <em>de la Sava.</em>
+      </h1>
+      <p class="page-hero__subtitle">
+        Le Vanilla planifolia prospère sur les terres volcaniques du nord-est de Madagascar.
+        Nous travaillons en direct avec les coopératives, sans intermédiaire.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION 1 — TERRITOIRE -->
+<section class="section section--paper origines-territoire" aria-labelledby="territoire-titre">
+  <div class="container">
+    <div class="origines-split">
+
+      <div class="origines-split__text fade-up">
+        <span class="section__label">Le Territoire</span>
+        <h2 class="section__title" id="territoire-titre">
+          La Sava,<br>berceau mondial.
+        </h2>
+        <p class="t-body">
+          La région Sava — Sambava, Antalaha, Vohémar, Andapa — concentre
+          plus de 80 % de la production mondiale de vanille Bourbon. Son microclimat
+          tropical, ses précipitations régulières et ses sols basaltiques créent
+          des conditions uniques impossibles à reproduire ailleurs.
+        </p>
+        <p class="t-body">
+          L'altitude varie de 0 à 1 200 mètres selon les parcelles. Les gousses
+          cultivées en altitude développent une concentration aromatique plus marquée,
+          une signature que l'on retrouve dans notre grade Gourmet TK Noire.
+        </p>
+      </div>
+
+      <div class="origines-split__visual fade-up fade-up--d1">
+        <div class="origines-photo-frame">
+          <img src="./assets/photos/sava-paysage.jpg"
+               alt="Paysage de la région Sava, Madagascar"
+               loading="lazy"
+               onerror="this.style.display='none'">
+          <div class="origines-photo-caption">
+            <span>Région Sava — 14°N, 50°E</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION 2 — BOTANIQ -->
+<section class="section section--cream origines-botanique" aria-labelledby="botanique-titre">
+  <div class="container">
+
+    <div class="origines-intro fade-up">
+      <span class="section__label">La Plante</span>
+      <h2 class="section__title" id="botanique-titre">Vanilla planifolia.</h2>
+      <p class="origines-intro__text">
+        Orchidée lianescente native du Mexique, naturalisée à Madagascar au XIX<sup>e</sup> siècle.
+        Sa pollinisation manuelle — introduite par Edmond Albius en 1841 — est restée inchangée.
+      </p>
+    </div>
+
+    <div class="origines-etapes">
+
+      <div class="origines-etape fade-up fade-up--d1">
+        <div class="origines-etape__num">01</div>
+        <h3 class="origines-etape__titre">Pollinisation manuelle</h3>
+        <p class="origines-etape__texte">
+          Chaque fleur s'ouvre un seul matin. L'agriculteur dispose de quelques heures
+          pour pratiquer la pollinisation au bambou. Cette contrainte explique l'intensité
+          du travail et la valeur de la vanille.
+        </p>
+      </div>
+
+      <div class="origines-etape fade-up fade-up--d2">
+        <div class="origines-etape__num">02</div>
+        <h3 class="origines-etape__titre">Récolte après 9 mois</h3>
+        <p class="origines-etape__texte">
+          Les gousses vertes sont récoltées entre juillet et novembre,
+          avant maturité complète pour stopper la fermentation naturelle.
+          Le lot SV-254 de la récolte 2025 a été sélectionné en septembre.
+        </p>
+      </div>
+
+      <div class="origines-etape fade-up fade-up--d3">
+        <div class="origines-etape__num">03</div>
+        <h3 class="origines-etape__titre">Échaudage &amp; fermentation</h3>
+        <p class="origines-etape__texte">
+          Immersion 3 minutes dans l'eau à 65°C, puis 8 à 10 jours d'étuvage
+          sous couvertures. Cette phase développe la vanilline et tourne les gousses
+          au noir caractéristique.
+        </p>
+      </div>
+
+      <div class="origines-etape fade-up fade-up--d1">
+        <div class="origines-etape__num">04</div>
+        <h3 class="origines-etape__titre">Affinage 2 à 3 mois</h3>
+        <p class="origines-etape__texte">
+          Séchage progressif à l'ombre — les gousses perdent 75 % de leur poids en eau.
+          Le grade Gourmet est défini à 30-35 % d'humidité résiduelle,
+          garantissant souplesse et concentration aromatique.
+        </p>
+      </div>
+
+      <div class="origines-etape fade-up fade-up--d2">
+        <div class="origines-etape__num">05</div>
+        <h3 class="origines-etape__titre">Tri &amp; calibrage</h3>
+        <p class="origines-etape__texte">
+          Seules les gousses longues de 17 cm minimum, sans fissure ni tache,
+          sont retenues pour le grade Gourmet TK Noire. Le reste constitue
+          le grade Split ou est orienté vers la poudre.
+        </p>
+      </div>
+
+      <div class="origines-etape fade-up fade-up--d3">
+        <div class="origines-etape__num">06</div>
+        <h3 class="origines-etape__titre">Contrôle à Marseille</h3>
+        <p class="origines-etape__texte">
+          À réception, chaque lot est contrôlé : taux d'humidité, calibre,
+          aspect visuel. Les références de lot (SV-254) permettent une traçabilité
+          complète de la parcelle à l'expédition.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION 3 — TERROIR PULLQUOTE -->
+<section class="origines-pullquote" aria-hidden="false">
+  <div class="origines-pullquote__bg" aria-hidden="true">
+    <img src="./assets/photos/vanille-fleur.jpg"
+         alt="Fleur de vanille Vanilla planifolia"
+         loading="lazy"
+         onerror="this.style.display='none'">
+  </div>
+  <div class="container">
+    <blockquote class="origines-pullquote__inner fade-up">
+      <p class="origines-pullquote__texte">
+        « La vanille ne pardonne pas la précipitation. Elle exige de l'attention,
+        chaque matin, tout au long de l'année. »
+      </p>
+      <footer class="origines-pullquote__attribution">
+        — Producteur partenaire, Sambava, Sava
+      </footer>
+    </blockquote>
+  </div>
+</section>
+
+
+<!-- SECTION 4 — TRACABILITÉ -->
+<section class="section section--paper origines-tracabilite" id="tracabilite" aria-labelledby="tracabilite-titre">
+  <div class="container">
+
+    <div class="origines-intro fade-up">
+      <span class="section__label">Traçabilité</span>
+      <h2 class="section__title" id="tracabilite-titre">De la parcelle<br>à votre cuisine.</h2>
+    </div>
+
+    <div class="origines-tracabilite__grille">
+
+      <div class="tracabilite-etape fade-up fade-up--d1">
+        <div class="tracabilite-etape__icone">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+               stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+        </div>
+        <h3 class="tracabilite-etape__titre">Parcelle identifiée</h3>
+        <p class="tracabilite-etape__texte">
+          Chaque lot correspond à une coopérative et une zone géographique précise
+          dans la Sava. Le lot SV-254 est associé à la récolte 2025 de Sambava.
+        </p>
+      </div>
+
+      <div class="tracabilite-etape fade-up fade-up--d2">
+        <div class="tracabilite-etape__icone">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+               stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <path d="M9 12l2 2 4-4"/>
+            <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>
+          </svg>
+        </div>
+        <h3 class="tracabilite-etape__titre">Contrôle qualité</h3>
+        <p class="tracabilite-etape__texte">
+          Humidité mesurée à la réception (30-35 % pour le grade Gourmet).
+          Calibre vérifié goussе à gousse. Refus immédiat des lots non conformes.
+        </p>
+      </div>
+
+      <div class="tracabilite-etape fade-up fade-up--d3">
+        <div class="tracabilite-etape__icone">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+               stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10"/>
+          </svg>
+        </div>
+        <h3 class="tracabilite-etape__titre">Numéro de lot</h3>
+        <p class="tracabilite-etape__texte">
+          Chaque commande est accompagnée de sa fiche de lot : référence,
+          récolte, calibre, taux d'humidité, date d'expédition depuis Marseille.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="origines-tracabilite__cta fade-up" style="text-align:center;margin-top:var(--space-lg)">
+      <a href="./nos-vanilles.html" class="btn btn--outline">
+        Voir nos grades →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <img src="./assets/logo-white.png" alt="Ova Vanilla" class="footer__brand-logo" width="130" height="38">
+        <p class="footer__tagline">De la Sava aux maisons de bouche.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/ovavanilla"
+             target="_blank" rel="noopener noreferrer"
+             class="footer__social-link" aria-label="Instagram @ovavanilla">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__col-title">Navigation</p>
+        <nav class="footer__nav" aria-label="Navigation pied de page">
+          <a href="./la-maison.html"      class="footer__nav-link">La Maison</a>
+          <a href="./nos-vanilles.html"   class="footer__nav-link">Nos Vanilles</a>
+          <a href="./origines.html"        class="footer__nav-link">Origines</a>
+          <a href="./professionnels.html" class="footer__nav-link">Professionnels</a>
+          <a href="./contact.html"         class="footer__nav-link">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <p class="footer__col-title">La Gamme</p>
+        <nav class="footer__nav" aria-label="Gamme produits">
+          <a href="./nos-vanilles.html#tk-noire" class="footer__nav-link">Gourmet TK Noire</a>
+          <a href="./nos-vanilles.html#split"    class="footer__nav-link">Split Gourmet</a>
+          <a href="./nos-vanilles.html#poudre"   class="footer__nav-link">Poudre de Vanille</a>
+          <a href="./nos-vanilles.html#extrait"  class="footer__nav-link">Extrait Naturel</a>
+        </nav>
+      </div>
+      <div>
+        <p class="footer__col-title">Contact</p>
+        <div class="footer__contact-row">
+          <span class="footer__contact-label">Adresse</span>
+          <span class="footer__contact-value">[ADRESSE_MARSEILLE]</span>
+        </div>
+        <div class="footer__contact-row">
+          <span class="footer__contact-label">Téléphone</span>
+          <span class="footer__contact-value">[TELEPHONE]</span>
+        </div>
+        <div class="footer__contact-row">
+          <span class="footer__contact-label">Email</span>
+          <span class="footer__contact-value">[EMAIL_PRO]</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 Ova Vanilla — Tous droits réservés</p>
+      <div class="footer__legal-links">
+        <a href="./mentions-legales.html" class="footer__legal-link">Mentions légales</a>
+        <a href="./mentions-legales.html#confidentialite" class="footer__legal-link">Politique de confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- SCRIPTS -->
+<script src="./js/lang.js"></script>
+<script src="./js/main.js"></script>
+
+</body>
+</html>

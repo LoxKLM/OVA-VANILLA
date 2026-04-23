@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>[PLACEHOLDER_EN] Ova Vanilla — Gourmet Vanilla from Madagascar | Marseille</title>
+  <meta name="description" content="[PLACEHOLDER_EN] Marseille-based trading house specialising in Gourmet vanilla from Madagascar. Black pods, extracts and powder for professional buyers.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ovavanilla.fr/en/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="[PLACEHOLDER_EN] Ova Vanilla — Gourmet Vanilla from Madagascar">
+  <meta property="og:description" content="[PLACEHOLDER_EN] From the Sava to your kitchen. Gourmet vanilla sourced directly from Madagascar.">
+  <meta property="og:image" content="https://ovavanilla.fr/assets/og-image.jpg">
+  <meta property="og:url" content="https://ovavanilla.fr/en/">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:site_name" content="Ova Vanilla">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="fr" href="https://ovavanilla.fr/">
+  <link rel="alternate" hreflang="en" href="https://ovavanilla.fr/en/">
+  <link rel="alternate" hreflang="x-default" href="https://ovavanilla.fr/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="alternate icon" href="../assets/favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS — same files, shared design system -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages/home.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Ova Vanilla",
+    "description": "[PLACEHOLDER_EN] B2B trading house specialising in Gourmet vanilla from Madagascar.",
+    "url": "https://ovavanilla.fr/en",
+    "logo": "https://ovavanilla.fr/assets/logo.png",
+    "telephone": "[TELEPHONE]",
+    "email": "[EMAIL_PRO]",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Marseille",
+      "addressCountry": "FR"
+    },
+    "areaServed": ["France", "Europe"],
+    "priceRange": "On quote"
+  }
+  </script>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header class="nav" id="nav" role="banner">
+  <a href="../index.html" class="nav__logo" aria-label="Ova Vanilla — Home">
+    <img src="../assets/logo.png" alt="Ova Vanilla" width="160" height="40" loading="eager">
+  </a>
+  <nav class="nav__links" aria-label="Main navigation">
+    <a href="./la-maison.html"      class="nav__link">[PLACEHOLDER_EN] About</a>
+    <a href="./nos-vanilles.html"   class="nav__link">[PLACEHOLDER_EN] Our Vanillas</a>
+    <a href="./origines.html"       class="nav__link">[PLACEHOLDER_EN] Origins</a>
+    <a href="./professionnels.html" class="nav__link">[PLACEHOLDER_EN] Trade</a>
+    <a href="./contact.html"        class="nav__link">[PLACEHOLDER_EN] Contact</a>
+  </nav>
+  <div class="nav__right">
+    <div class="nav__lang-switcher" role="navigation" aria-label="Language">
+      <button class="nav__lang" onclick="switchLang('fr')" aria-label="Français">FR</button>
+      <span class="nav__lang-sep" aria-hidden="true">/</span>
+      <button class="nav__lang nav__lang--active" onclick="switchLang('en')" aria-label="English">EN</button>
+    </div>
+    <a href="./professionnels.html#devis" class="btn btn--nav">[PLACEHOLDER_EN] Request a quote ↗</a>
+    <button class="nav__burger" id="nav-burger"
+            aria-label="Open menu" aria-expanded="false" aria-controls="nav-mobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav__mobile" id="nav-mobile" role="dialog" aria-modal="true" aria-label="Menu">
+  <a href="./la-maison.html"      class="nav__mobile-link">[PLACEHOLDER_EN] About</a>
+  <a href="./nos-vanilles.html"   class="nav__mobile-link">[PLACEHOLDER_EN] Our Vanillas</a>
+  <a href="./origines.html"       class="nav__mobile-link">[PLACEHOLDER_EN] Origins</a>
+  <a href="./professionnels.html" class="nav__mobile-link">[PLACEHOLDER_EN] Trade</a>
+  <a href="./contact.html"        class="nav__mobile-link">[PLACEHOLDER_EN] Contact</a>
+  <a href="./professionnels.html#devis" class="btn btn--primary btn--lg" style="margin-top:16px">
+    [PLACEHOLDER_EN] Request a quote ↗
+  </a>
+  <div class="nav__mobile-lang">
+    <button class="nav__lang" onclick="switchLang('fr')">FR</button>
+    <span class="nav__lang-sep" aria-hidden="true">/</span>
+    <button class="nav__lang nav__lang--active" onclick="switchLang('en')">EN</button>
+  </div>
+</div>
+
+
+<!-- HERO -->
+<section class="hero" id="home" aria-label="Ova Vanilla — Trading house">
+
+  <div class="hero__bg" aria-hidden="true">
+    <img src="../assets/photos/hero-gousses.jpg"
+         alt="[PLACEHOLDER_EN] Gourmet black vanilla pods — Ova Vanilla"
+         class="hero__img"
+         loading="eager"
+         fetchpriority="high">
+    <div class="hero__overlay"></div>
+  </div>
+
+  <div class="hero__content">
+
+    <p class="hero__label" aria-hidden="true">
+      [PLACEHOLDER_EN] Trading House — Marseille · Sambava
+    </p>
+
+    <h1 class="hero__title">
+      [PLACEHOLDER_EN] Gourmet<br>
+      <em>vanilla</em> from<br>
+      Madagascar.
+    </h1>
+
+    <p class="hero__tagline">
+      [PLACEHOLDER_EN] 2025 harvest — black pods, extracts and powder for bakers,
+      pastry chefs and restaurateurs. Direct sourcing from the Sava cooperatives,
+      quality control on arrival in Marseille.
+    </p>
+
+    <div class="hero__cta">
+      <a href="./professionnels.html#echantillon" class="btn btn--primary btn--lg">
+        [PLACEHOLDER_EN] Request a free sample
+      </a>
+      <a href="./nos-vanilles.html" class="hero__link link-arrow">
+        [PLACEHOLDER_EN] View grades <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SECTION — PRODUITS -->
+<section class="section section--paper" id="products" aria-labelledby="products-title">
+  <div class="container">
+
+    <div class="section__header fade-up">
+      <span class="section__label">[PLACEHOLDER_EN] Our grades</span>
+      <h2 class="section__title" id="products-title">
+        [PLACEHOLDER_EN] Selected<br>at the source.
+      </h2>
+      <a href="./nos-vanilles.html" class="link-arrow section__header-link">
+        [PLACEHOLDER_EN] See all grades <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="grade-cards fade-up fade-up--d1">
+
+      <article class="grade-card">
+        <div class="grade-card__img-wrap">
+          <img src="../assets/photos/tk-noire.jpg"
+               alt="[PLACEHOLDER_EN] Gourmet TK Noire vanilla pods"
+               loading="lazy"
+               onerror="this.style.display='none'">
+        </div>
+        <div class="grade-card__body">
+          <span class="grade-card__label">[PLACEHOLDER_EN] Black pod · Lot SV-254</span>
+          <h3 class="grade-card__titre">Gourmet TK Noire</h3>
+          <p class="grade-card__texte">
+            [PLACEHOLDER_EN] 17 cm minimum, 30–35% residual moisture. 2025 harvest.
+            Intense aroma, ideal for high-end pastry.
+          </p>
+          <a href="./nos-vanilles.html#tk-noire" class="link-arrow grade-card__link">
+            [PLACEHOLDER_EN] Product sheet <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="grade-card">
+        <div class="grade-card__img-wrap">
+          <img src="../assets/photos/split.jpg"
+               alt="[PLACEHOLDER_EN] Split Gourmet vanilla pods"
+               loading="lazy"
+               onerror="this.style.display='none'">
+        </div>
+        <div class="grade-card__body">
+          <span class="grade-card__label">[PLACEHOLDER_EN] Split pod</span>
+          <h3 class="grade-card__titre">Split Gourmet</h3>
+          <p class="grade-card__texte">
+            [PLACEHOLDER_EN] 14–16 cm. Natural split due to over-ripening.
+            Identical aromatic profile at a competitive price point.
+          </p>
+          <a href="./nos-vanilles.html#split" class="link-arrow grade-card__link">
+            [PLACEHOLDER_EN] Product sheet <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="grade-card">
+        <div class="grade-card__img-wrap">
+          <img src="../assets/photos/poudre.jpg"
+               alt="[PLACEHOLDER_EN] Pure vanilla powder"
+               loading="lazy"
+               onerror="this.style.display='none'">
+        </div>
+        <div class="grade-card__body">
+          <span class="grade-card__label">[PLACEHOLDER_EN] Ground</span>
+          <h3 class="grade-card__titre">[PLACEHOLDER_EN] Vanilla Powder</h3>
+          <p class="grade-card__texte">
+            [PLACEHOLDER_EN] 100% Vanilla planifolia, no additives.
+            Cold-ground from whole pods. Ready to incorporate.
+          </p>
+          <a href="./nos-vanilles.html#poudre" class="link-arrow grade-card__link">
+            [PLACEHOLDER_EN] Product sheet <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SECTION — ORIGINES -->
+<section class="section section--ink" id="origins" aria-labelledby="origins-title">
+  <div class="container">
+    <div class="origines-section__inner fade-up">
+      <div class="origines-section__text">
+        <span class="section__label" style="color:var(--gold)">[PLACEHOLDER_EN] Origins</span>
+        <h2 class="section__title" id="origins-title" style="color:var(--cream)">
+          [PLACEHOLDER_EN] Sava region,<br>
+          <em>[PLACEHOLDER_EN] north-east Madagascar.</em>
+        </h2>
+        <p class="t-body" style="color:var(--cream);opacity:0.75;max-width:52ch">
+          [PLACEHOLDER_EN] The Sava region concentrates over 80% of world vanilla production.
+          Its volcanic soils, tropical microclimate, and ancestral know-how produce pods
+          that are impossible to replicate elsewhere.
+        </p>
+        <a href="./origines.html" class="btn btn--outline btn--cream" style="margin-top:var(--space-sm)">
+          [PLACEHOLDER_EN] Learn more →
+        </a>
+      </div>
+      <div class="origines-section__visual" aria-hidden="true">
+        <img src="../assets/photos/sava-carte.jpg"
+             alt=""
+             loading="lazy"
+             onerror="this.style.display='none'">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION — PROFESSIONNELS -->
+<section class="section section--paper pros-section" id="trade" aria-labelledby="trade-titre">
+  <div class="container">
+    <div class="pros-section__inner">
+      <div class="pros-section__header">
+        <span class="section__label fade-up">[PLACEHOLDER_EN] Trade</span>
+        <h2 class="section__title fade-up fade-up--d1" id="trade-titre">
+          [PLACEHOLDER_EN] Supplying a<br>professional kitchen?
+        </h2>
+      </div>
+      <div class="pros-section__body fade-up fade-up--d2">
+        <p class="t-body" style="opacity:0.8;max-width:56ch">
+          [PLACEHOLDER_EN] Ova Vanilla works directly with bakers, pastry chefs, restaurateurs
+          and distributors. Orders from 500 g. Delivery within 5 business days.
+          Custom quote based on volume and grade.
+        </p>
+        <div class="pros-section__ctas">
+          <a href="./professionnels.html#devis" class="btn btn--primary">
+            [PLACEHOLDER_EN] Request a quote
+          </a>
+          <a href="./professionnels.html#echantillon" class="btn btn--outline">
+            [PLACEHOLDER_EN] Request a sample
+          </a>
+        </div>
+      </div>
+      <div class="pros-section__metrics fade-up fade-up--d3">
+        <div class="pros-metric">
+          <span class="pros-metric__val">500 g</span>
+          <span class="pros-metric__label">[PLACEHOLDER_EN] Minimum order</span>
+        </div>
+        <div class="pros-metric">
+          <span class="pros-metric__val">J + 5</span>
+          <span class="pros-metric__label">[PLACEHOLDER_EN] Delivery lead time</span>
+        </div>
+        <div class="pros-metric">
+          <span class="pros-metric__val">B2B</span>
+          <span class="pros-metric__label">[PLACEHOLDER_EN] Professional only</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <img src="../assets/logo-white.png" alt="Ova Vanilla" class="footer__brand-logo" width="130" height="38">
+        <p class="footer__tagline">[PLACEHOLDER_EN] From the Sava to your kitchen.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/ovavanilla"
+             target="_blank" rel="noopener noreferrer"
+             class="footer__social-link" aria-label="Instagram @ovavanilla">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__col-title">[PLACEHOLDER_EN] Navigation</p>
+        <nav class="footer__nav" aria-label="Navigation">
+          <a href="./la-maison.html"      class="footer__nav-link">[PLACEHOLDER_EN] About</a>
+          <a href="./nos-vanilles.html"   class="footer__nav-link">[PLACEHOLDER_EN] Our Vanillas</a>
+          <a href="./origines.html"        class="footer__nav-link">[PLACEHOLDER_EN] Origins</a>
+          <a href="./professionnels.html" class="footer__nav-link">[PLACEHOLDER_EN] Trade</a>
+          <a href="./contact.html"         class="footer__nav-link">[PLACEHOLDER_EN] Contact</a>
+        </nav>
+      </div>
+      <div>
+        <p class="footer__col-title">[PLACEHOLDER_EN] Range</p>
+        <nav class="footer__nav" aria-label="Product range">
+          <a href="./nos-vanilles.html#tk-noire" class="footer__nav-link">Gourmet TK Noire</a>
+          <a href="./nos-vanilles.html#split"    class="footer__nav-link">Split Gourmet</a>
+          <a href="./nos-vanilles.html#poudre"   class="footer__nav-link">[PLACEHOLDER_EN] Vanilla Powder</a>
+        </nav>
+      </div>
+      <div>
+        <p class="footer__col-title">[PLACEHOLDER_EN] Contact</p>
+        <div class="footer__contact-row">
+          <span class="footer__contact-label">[PLACEHOLDER_EN] Address</span>
+          <span class="footer__contact-value">Marseille, France</span>
+        </div>
+        <div class="footer__contact-row">
+          <span class="footer__contact-label">Email</span>
+          <span class="footer__contact-value">[EMAIL_PRO]</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 Ova Vanilla — All rights reserved</p>
+      <div class="footer__legal-links">
+        <a href="../mentions-legales.html" class="footer__legal-link">[PLACEHOLDER_EN] Legal notice</a>
+        <a href="../mentions-legales.html#confidentialite" class="footer__legal-link">[PLACEHOLDER_EN] Privacy policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- SCRIPTS -->
+<script src="../js/lang.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>

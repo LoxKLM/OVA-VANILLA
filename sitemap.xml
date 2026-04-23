@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://ovavanilla.fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ovavanilla.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ovavanilla.fr/en/"/>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- La Maison -->
+  <url>
+    <loc>https://ovavanilla.fr/la-maison.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Nos Vanilles -->
+  <url>
+    <loc>https://ovavanilla.fr/nos-vanilles.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Origines -->
+  <url>
+    <loc>https://ovavanilla.fr/origines.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Professionnels -->
+  <url>
+    <loc>https://ovavanilla.fr/professionnels.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://ovavanilla.fr/contact.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- EN — Accueil -->
+  <url>
+    <loc>https://ovavanilla.fr/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ovavanilla.fr/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ovavanilla.fr/"/>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,662 @@
+/* ────────────────────────────────────────────────────────────────────────────
+   pages/home.css — Ova Vanilla
+   Styles spécifiques à la homepage (index.html)
+   ──────────────────────────────────────────────────────────────────────────── */
+
+/* ══════════════════════════════════════════════════════════════════════════
+   HERO
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--deep); /* Fallback si photo absente */
+}
+
+/* Fond photographique */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.hero__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+  opacity: 0.65;
+  filter: contrast(1.08) brightness(0.88);
+}
+
+/* Overlay dégradé 45% gauche vers droite */
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    108deg,
+    rgba(15, 26, 19, 0.88) 0%,
+    rgba(15, 26, 19, 0.60) 45%,
+    rgba(15, 26, 19, 0.10) 100%
+  );
+}
+
+/* Contenu centré verticalement */
+.hero__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--pad-x);
+  padding-top: var(--nav-height);
+}
+
+/* Surtitre Inter Light uppercase letterspaced */
+.hero__label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 300;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: heroFade 0.9s ease-out 0.2s forwards;
+}
+
+/* Titre H1 Cormorant ~80px desktop */
+.hero__title {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  color: var(--cream);
+  max-width: 13ch;
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: heroFade 0.9s ease-out 0.35s forwards;
+}
+
+.hero__title em {
+  font-style: italic;
+  opacity: 0.92;
+}
+
+/* Tagline Inter Light crème */
+.hero__tagline {
+  font-family: var(--font-sans);
+  font-size: clamp(0.9375rem, 1.5vw, 1.0625rem);
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--cream);
+  opacity: 0;
+  max-width: 52ch;
+  margin-bottom: 40px;
+  animation: heroFade 0.9s ease-out 0.5s forwards;
+}
+
+/* Boutons CTA */
+.hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  animation: heroFade 0.8s ease-out 0.65s forwards;
+}
+
+/* Lien "Voir les grades" — texte or */
+.hero__link {
+  color: var(--gold);
+  opacity: 0.85;
+  transition: opacity var(--transition-fast), gap var(--transition-fast);
+}
+
+.hero__link:hover { opacity: 1; }
+
+/* Indicateur de défilement */
+.hero__scroll {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 2;
+}
+
+.hero__scroll-line {
+  width: 1px;
+  height: 52px;
+  background: linear-gradient(to bottom, rgba(240,230,210,0.75), transparent);
+  animation: scrollPulse 2.4s ease-in-out infinite;
+}
+
+.hero__scroll-label {
+  font-family: var(--font-sans);
+  font-size: 0.5625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cream);
+  opacity: 0.35;
+}
+
+/* Animations d'entrée hero */
+@keyframes heroFade {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* La tagline a une opacité finale de 0.85 — on surcharge l'animation */
+.hero__tagline { animation-name: heroFadeTagline; }
+@keyframes heroFadeTagline {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 0.85; transform: translateY(0); }
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.15; transform: scaleY(0.7); transform-origin: top; }
+  50%       { opacity: 0.7;  transform: scaleY(1); }
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   NOS VANILLES — grille homepage
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.vanilles__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.vanilles__footer {
+  text-align: center;
+  margin-top: 48px;
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   ORIGINES — section homepage
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.origines-section__inner {
+  align-items: center;
+}
+
+.origines-section__text {
+  color: var(--cream);
+  opacity: 0.85;
+  margin-bottom: 32px;
+}
+
+.origines-section__img-wrap {
+  position: relative;
+}
+
+.origines-section__img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  filter: contrast(1.05) brightness(0.92);
+  background-color: var(--deep);
+}
+
+.origines-section__img-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-family: var(--font-sans);
+  font-size: 0.5625rem;
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cream);
+  opacity: 0.45;
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   LA MAISON — section homepage
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.maison-section__inner {
+  align-items: center;
+}
+
+.maison-section__text {
+  color: var(--deep);
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.maison-section__img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  background-color: var(--deep);
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   ESPACE PROFESSIONNELS — section homepage
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.pros-section__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.pros-section__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+/* Métriques chiffrées */
+.pros-section__metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--gold-20);
+  grid-column: 3;
+  align-self: center;
+}
+
+.pros-metric {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--gold-20);
+}
+
+.pros-metric__val {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.pros-metric__label {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--deep);
+  opacity: 0.55;
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   INSTAGRAM — 6 posts simulés statiques
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.instagram-section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Grille 3 colonnes */
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+/* Post Instagram — carré */
+.insta-post {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity var(--transition-fast);
+  position: relative;
+}
+
+.insta-post:hover { opacity: 0.9; }
+.insta-post:focus { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+/* Zone visuelle carrée (les 80% hauts du post) */
+.insta-post__inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  min-height: 0;
+}
+
+/* Zone méta (les 20% bas — légende simulée) */
+.insta-post__meta {
+  padding: 10px 12px;
+  background-color: rgba(255,255,255,0.95);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex-shrink: 0;
+}
+
+.insta-post__handle {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 500;
+  color: var(--deep);
+  letter-spacing: 0.02em;
+}
+
+.insta-post__text {
+  font-family: var(--font-sans);
+  font-size: 0.5625rem;
+  font-weight: 300;
+  color: var(--deep);
+  opacity: 0.65;
+  line-height: 1.4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* ── Post 1 — Fond crème — Logo ────────────────────────────────────────── */
+.insta-post--cream {
+  background-color: var(--cream);
+}
+
+.insta-post__logo-wrap {
+  width: 64px;
+  height: 64px;
+  border: 1px solid var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.insta-post__logo-text {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--ink);
+  letter-spacing: 0.05em;
+}
+
+.insta-post__caption-bar {
+  font-family: var(--font-sans);
+  font-size: 0.4375rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--deep);
+  opacity: 0.7;
+  text-align: center;
+}
+
+/* ── Post 2 — Fond sombre — Gousses ────────────────────────────────────── */
+.insta-post--dark {
+  background-color: var(--deep);
+}
+
+.insta-post--dark .insta-post__meta {
+  background-color: rgba(15,26,19,0.95);
+}
+
+.insta-post--dark .insta-post__handle,
+.insta-post--dark .insta-post__text {
+  color: var(--cream);
+}
+
+.insta-post__dark-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.insta-post__lot-label {
+  font-family: var(--font-sans);
+  font-size: 0.5rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.insta-post__grade-italic {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  color: var(--cream);
+}
+
+/* ── Post 3 — Fond vert forêt — Citation ───────────────────────────────── */
+.insta-post--forest {
+  background-color: var(--ink);
+}
+
+.insta-post--forest .insta-post__meta {
+  background-color: rgba(31,53,40,0.97);
+}
+
+.insta-post--forest .insta-post__handle,
+.insta-post--forest .insta-post__text {
+  color: var(--cream);
+}
+
+.insta-post__surtitre {
+  font-family: var(--font-sans);
+  font-size: 0.4375rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.insta-post__quote {
+  font-family: var(--font-serif);
+  font-size: clamp(0.75rem, 1.2vw, 1rem);
+  font-style: italic;
+  color: var(--cream);
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* ── Post 4 — Fond blanc cassé — Fiche ─────────────────────────────────── */
+.insta-post--paper {
+  background-color: var(--paper);
+}
+
+.insta-post__fiche-badge {
+  font-family: var(--font-sans);
+  font-size: 0.375rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 2px 8px;
+  margin-bottom: 12px;
+}
+
+.insta-post__fiche-name {
+  font-family: var(--font-serif);
+  font-size: clamp(0.875rem, 1.4vw, 1.25rem);
+  font-weight: 400;
+  color: var(--deep);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.insta-post__fiche-specs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.insta-post__fiche-specs span {
+  font-family: var(--font-sans);
+  font-size: 0.375rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: var(--deep);
+  opacity: 0.65;
+  text-transform: uppercase;
+}
+
+.insta-post__fiche-mono {
+  position: absolute;
+  bottom: 25%;
+  right: 12px;
+  font-family: var(--font-serif);
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--gold);
+  opacity: 0.4;
+}
+
+/* ── Post 5 — Palette couleurs ─────────────────────────────────────────── */
+.insta-post--palette {
+  background-color: var(--cream);
+}
+
+.insta-post__swatches {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 2px;
+}
+
+.insta-post__swatch {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.insta-post__swatch span {
+  font-family: var(--font-sans);
+  font-size: 0.4rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: var(--deep);
+}
+
+/* ── Post 6 — Fond or — Événement ──────────────────────────────────────── */
+.insta-post--event {
+  background-color: var(--gold);
+}
+
+.insta-post--event .insta-post__meta {
+  background-color: rgba(184,147,90,0.97);
+}
+
+.insta-post--event .insta-post__handle,
+.insta-post--event .insta-post__text {
+  color: var(--paper);
+}
+
+.insta-post__event-label {
+  font-family: var(--font-sans);
+  font-size: 0.4375rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--paper);
+  opacity: 0.7;
+  margin-bottom: 12px;
+}
+
+.insta-post__event-name {
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
+  font-weight: 400;
+  color: var(--paper);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.insta-post__event-date {
+  font-family: var(--font-sans);
+  font-size: 0.5rem;
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  color: var(--paper);
+  opacity: 0.85;
+  text-align: center;
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   RESPONSIVE — homepage
+   ══════════════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 1100px) {
+  .vanilles__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pros-section__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .pros-section__metrics {
+    grid-column: 1;
+    flex-direction: row;
+    border-top: 1px solid var(--gold-20);
+    border-bottom: 1px solid var(--gold-20);
+  }
+
+  .pros-metric {
+    flex: 1;
+    border-bottom: none;
+    border-right: 1px solid var(--gold-20);
+    padding: var(--space-sm) var(--space-sm);
+  }
+
+  .pros-metric:last-child { border-right: none; }
+}
+
+@media (max-width: 768px) {
+  .hero__cta { flex-direction: column; align-items: flex-start; }
+  .instagram-grid { grid-template-columns: repeat(2, 1fr); }
+  .vanilles__grid { grid-template-columns: 1fr; }
+
+  .pros-section__metrics {
+    flex-direction: column;
+  }
+
+  .pros-metric {
+    border-right: none;
+    border-bottom: 1px solid var(--gold-20);
+  }
+}
+
+@media (max-width: 480px) {
+  .instagram-grid { grid-template-columns: 1fr 1fr; }
+}

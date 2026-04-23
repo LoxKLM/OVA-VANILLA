@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO primaire -->
+  <title>Ova Vanilla — Négoce de Vanille Gourmet Madagascar | Marseille</title>
+  <meta name="description" content="Maison de négoce spécialisée en vanille Gourmet de Madagascar. Gousses noires, extraits et poudres sélectionnés à la source dans la Sava. Fournitures B2B pour boulangers, pâtissiers et restaurateurs.">
+  <meta name="keywords" content="vanille madagascar grossiste, fournisseur vanille professionnels, vanille gourmet b2b marseille, négociant vanille sava sambava, achat vanille pâtisserie restauration">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Ova Vanilla">
+  <link rel="canonical" href="https://ovavanilla.fr/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ova Vanilla — Vanille Gourmet de Madagascar">
+  <meta property="og:description" content="De la Sava aux maisons de bouche. Vanille Gourmet sélectionnée à la source, livrée aux professionnels depuis Marseille.">
+  <meta property="og:image" content="https://ovavanilla.fr/assets/og-image.jpg">
+  <meta property="og:url" content="https://ovavanilla.fr">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Ova Vanilla">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ova Vanilla — Vanille Gourmet de Madagascar">
+  <meta name="twitter:description" content="De la Sava aux maisons de bouche.">
+  <meta name="twitter:image" content="https://ovavanilla.fr/assets/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="alternate icon" href="./assets/favicon.ico">
+
+  <!-- Google Fonts — preconnect pour performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS — ordre strict -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages/home.css">
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Ova Vanilla",
+    "description": "Maison de négoce B2B spécialisée dans l'import et la vente de vanille Gourmet de Madagascar. Gousses noires, extraits et poudres sélectionnés auprès des coopératives de la Sava.",
+    "url": "https://ovavanilla.fr",
+    "logo": "https://ovavanilla.fr/assets/logo.png",
+    "telephone": "[TELEPHONE]",
+    "email": "[EMAIL_PRO]",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[ADRESSE_MARSEILLE]",
+      "addressLocality": "Marseille",
+      "postalCode": "[CODE_POSTAL]",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "43.2965",
+      "longitude": "5.3698"
+    },
+    "areaServed": ["Marseille", "France", "Europe"],
+    "sameAs": ["https://www.instagram.com/ovavanilla"],
+    "priceRange": "Sur devis"
+  }
+  </script>
+</head>
+
+<body>
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     NAVIGATION
+     ════════════════════════════════════════════════════════════════════════ -->
+<header class="nav" id="nav" role="banner">
+
+  <!-- Logo -->
+  <a href="./index.html" class="nav__logo" aria-label="Ova Vanilla — Accueil">
+    <img src="./assets/logo.png" alt="Ova Vanilla" width="160" height="40" loading="eager">
+  </a>
+
+  <!-- Liens principaux -->
+  <nav class="nav__links" aria-label="Navigation principale">
+    <a href="./la-maison.html" class="nav__link">La Maison</a>
+    <a href="./nos-vanilles.html" class="nav__link">Nos Vanilles</a>
+    <a href="./origines.html" class="nav__link">Origines</a>
+    <a href="./professionnels.html" class="nav__link">Professionnels</a>
+    <a href="./contact.html" class="nav__link">Contact</a>
+  </nav>
+
+  <!-- Zone droite -->
+  <div class="nav__right">
+    <div class="nav__lang-switcher" role="navigation" aria-label="Langue">
+      <button class="nav__lang nav__lang--active" onclick="switchLang('fr')" aria-label="Français">FR</button>
+      <span class="nav__lang-sep" aria-hidden="true">/</span>
+      <button class="nav__lang" onclick="switchLang('en')" aria-label="English">EN</button>
+    </div>
+    <a href="./professionnels.html#devis" class="btn btn--nav">Demander un devis ↗</a>
+    <button class="nav__burger" id="nav-burger"
+            aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-mobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+</header>
+
+<!-- Menu mobile overlay -->
+<div class="nav__mobile" id="nav-mobile" role="dialog" aria-modal="true" aria-label="Menu">
+  <a href="./la-maison.html"      class="nav__mobile-link">La Maison</a>
+  <a href="./nos-vanilles.html"   class="nav__mobile-link">Nos Vanilles</a>
+  <a href="./origines.html"       class="nav__mobile-link">Origines</a>
+  <a href="./professionnels.html" class="nav__mobile-link">Professionnels</a>
+  <a href="./contact.html"        class="nav__mobile-link">Contact</a>
+  <a href="./professionnels.html#devis" class="btn btn--primary btn--lg" style="margin-top:16px">
+    Demander un devis ↗
+  </a>
+  <div class="nav__mobile-lang">
+    <button class="nav__lang nav__lang--active" onclick="switchLang('fr')">FR</button>
+    <span class="nav__lang-sep" aria-hidden="true">/</span>
+    <button class="nav__lang" onclick="switchLang('en')">EN</button>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 1 — HERO
+     ════════════════════════════════════════════════════════════════════════ -->
+<section class="hero" id="accueil" aria-label="Ova Vanilla — Maison de négoce">
+
+  <!-- Fond photographique sombre -->
+  <div class="hero__bg" aria-hidden="true">
+    <img src="./assets/photos/hero-gousses.jpg"
+         alt="Gousses de vanille noire Gourmet — Ova Vanilla"
+         class="hero__img"
+         loading="eager"
+         fetchpriority="high">
+    <div class="hero__overlay"></div>
+  </div>
+
+  <!-- Contenu textuel -->
+  <div class="hero__content">
+
+    <!-- Surtitre Inter Light uppercase -->
+    <p class="hero__label" aria-hidden="true">
+      Maison de Négoce — Marseille · Sambava
+    </p>
+
+    <!-- Titre principal H1 Cormorant ~80px -->
+    <h1 class="hero__title">
+      La vanille<br>
+      <em>Gourmet</em> de<br>
+      Madagascar.
+    </h1>
+
+    <!-- Tagline descriptif -->
+    <p class="hero__tagline">
+      Récolte 2025 — gousses noires, extraits et poudres pour boulangers,
+      pâtissiers et restaurateurs. Sélection directe auprès des coopératives
+      de la Sava, contrôle à l'arrivée à Marseille.
+    </p>
+
+    <!-- CTA -->
+    <div class="hero__cta">
+      <a href="./professionnels.html#echantillon" class="btn btn--primary btn--lg">
+        Demander un échantillon
+      </a>
+      <a href="./nos-vanilles.html" class="hero__link link-arrow">
+        Voir les grades <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Indicateur de défilement -->
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="hero__scroll-line"></div>
+    <span class="hero__scroll-label">Défiler</span>
+  </div>
+
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 2 — NOS VANILLES
+     ════════════════════════════════════════════════════════════════════════ -->
+<section class="section section--paper vanilles" id="nos-vanilles" aria-labelledby="vanilles-titre">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__label fade-up">La Gamme</span>
+      <h2 class="section__title fade-up fade-up--d1" id="vanilles-titre">Nos Vanilles</h2>
+      <p class="section__subtitle fade-up fade-up--d2">
+        Sélection par grade, lot tracé, livraison B2B.
+      </p>
+    </div>
+
+    <div class="vanilles__grid">
+
+      <!-- Fiche 1 — Gourmet TK Noire -->
+      <article class="grade-card fade-up" id="tk-noire">
+        <div class="grade-card__img-wrap">
+          <img src="./assets/photos/grade-tk-noire.jpg"
+               alt="Gousses de vanille noire Gourmet TK — Lot SV-254, récolte 2025"
+               class="grade-card__img" loading="lazy">
+          <div class="grade-card__img-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="0.8">
+              <ellipse cx="12" cy="12" rx="3" ry="9" transform="rotate(20 12 12)"/>
+            </svg>
+          </div>
+          <span class="grade-card__monogram">OV</span>
+        </div>
+        <div class="grade-card__body">
+          <div class="grade-card__top">
+            <span class="grade-card__badge">Fiche produit</span>
+            <span class="grade-card__devis">Sur devis</span>
+          </div>
+          <h3 class="grade-card__name">Gourmet TK Noire</h3>
+          <p class="grade-card__desc">
+            Le standard du négoce fin. Souple, noire, charnue —
+            la référence pour la pâtisserie et la chocolaterie haute exigence.
+          </p>
+          <dl class="grade-card__specs">
+            <div>
+              <dt class="spec__label">Origine</dt>
+              <dd class="spec__value">Sambava · Madagascar</dd>
+            </div>
+            <div>
+              <dt class="spec__label">Récolte — Lot</dt>
+              <dd class="spec__value">2025 — Lot SV-254</dd>
+            </div>
+            <div>
+              <dt class="spec__label">Calibre</dt>
+              <dd class="spec__value">17 cm</dd>
+            </div>
+            <div>
+              <dt class="spec__label">Humidité</dt>
+              <dd class="spec__value">30 — 35 % H₂O</dd>
+            </div>
+          </dl>
+          <a href="./nos-vanilles.html#tk-noire" class="grade-card__link">
+            Voir la fiche <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Fiche 2 — Split Gourmet -->
+      <article class="grade-card fade-up fade-up--d1" id="split">
+        <div class="grade-card__img-wrap">
+          <img src="./assets/photos/grade-split.jpg"
+               alt="Gousses de vanille Split Gourmet — récolte 2025"
+               class="grade-card__img" loading="lazy">
+          <div class="grade-card__img-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="0.8">
+              <ellipse cx="12" cy="12" rx="3" ry="9" transform="rotate(20 12 12)"/>
+            </svg>
+          </div>
+          <span class="grade-card__monogram">OV</span>
+        </div>
+        <div class="grade-card__body">
+          <div class="grade-card__top">
+            <span class="grade-card__badge">Fiche produit</span>
+            <span class="grade-card__devis">Sur devis</span>
+          </div>
+          <h3 class="grade-card__name">Split Gourmet</h3>
+          <p class="grade-card__desc">
+            Gousses fendues naturellement — extrêmement riches en vanilline.
+            Idéales pour les infusions, préparations à froid et productions en volume.
+          </p>
+          <dl class="grade-card__specs">
+            <div>
+              <dt class="spec__label">Origine</dt>
+              <dd class="spec__value">Sambava · Madagascar</dd>
+            </div>
+            <div>
+              <dt class="spec__label">Récolte</dt>
+              <dd class="spec__value">2025</dd>
+            </div>
+            <div>
+              <dt class="spec__label">Calibre</dt>
+              <dd class="spec__value">14 — 16 cm</dd>
+            </div>
+            <div>
+              <dt class="spec__label">Humidité</dt>
+              <dd class="spec__value">25 — 30 % H₂O</dd>
+            </div>
+          </dl>
+          <a href="./nos-vanilles.html#split" class="grade-card__link">
+            Voir la fiche <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Fiche 3 — Poudre de Vanille -->
+      <article class="grade-card fade-up fade-up--d2" id="poudre">
+        <div class="grade-card__img-wrap">
+          <img src="./assets/photos/grade-poudre.jpg"
+               alt="Poudre de vanille pure — Ova Vanilla"
+               class="grade-card__img" loading="lazy">
+          <div class="grade-card__img-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="0.8">
+              <circle cx="12" cy="12" r="6"/>
+            </svg>
+          </div>
+          <span class="grade-card__monogram">OV</span>
+        </div>
+        <div class="grade-card__body">
+          <div class="grade-card__top">
+            <span class="grade-card__badge">Fiche produit</span>
+            <span class="grade-card__devis">Sur devis</span>
+          </div>
+          <h3 class="grade-card__name">Poudre de Vanille</h3>
+          <p class="grade-card__desc">
+            Gousses entières broyées, sans exhausteur ni additif.
+            Traçabilité lot à lot. Du conditionnement 100 g au sac 1 kg professionnel.
+          </p>
+          <dl class="grade-card__specs">
+            <div>
+              <dt class="spec__label">Origine</dt>
+              <dd class="spec__value">Région Sava</dd>
+            </div>
+            <div>
+              <dt class="spec__label">Composition</dt>
+              <dd class="spec__value">100 % Vanilla planifolia</dd>
+            </div>
+            <div>
+              <dt class="spec__label">Conditionnement</dt>
+              <dd class="spec__value">100 g — 1 kg</dd>
+            </div>
+            <div>
+              <dt class="spec__label">Additifs</dt>
+              <dd class="spec__value">Aucun</dd>
+            </div>
+          </dl>
+          <a href="./nos-vanilles.html#poudre" class="grade-card__link">
+            Voir la fiche <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+    </div><!-- /vanilles__grid -->
+
+    <div class="vanilles__footer fade-up">
+      <a href="./nos-vanilles.html" class="btn btn--outline">Voir la gamme complète</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 3 — ORIGINES
+     Fond vert forêt — texte crème
+     ════════════════════════════════════════════════════════════════════════ -->
+<section class="section section--ink origines-section" id="origines" aria-labelledby="origines-titre">
+  <div class="container">
+    <div class="grid-2 origines-section__inner">
+
+      <!-- Contenu textuel -->
+      <div class="origines-section__content">
+
+        <span class="section__label fade-up">La Source</span>
+
+        <h2 class="section__title fade-up fade-up--d1" id="origines-titre"
+            style="color:var(--cream)">
+          De la Sava aux<br>maisons de bouche.
+        </h2>
+
+        <p class="origines-section__text t-body fade-up fade-up--d2">
+          Depuis Marseille, Ova Vanilla approvisionne boulangers, pâtissiers et restaurateurs
+          en gousses et extraits sélectionnés auprès des coopératives de la Sava.
+          Des lots tracés, des grades lisibles, une exigence de fraîcheur qui ne transige pas.
+        </p>
+
+        <!-- Pullquote -->
+        <div class="pullquote fade-up fade-up--d2">
+          <p class="pullquote__text">
+            « La Sava, c'est trois vallées<br>et un savoir-faire qui se transmet. »
+          </p>
+          <cite class="pullquote__cite">— Rakoto, Coopérative d'Andapa</cite>
+        </div>
+
+        <a href="./origines.html" class="btn btn--secondary fade-up fade-up--d3">
+          Découvrir les origines
+        </a>
+
+      </div>
+
+      <!-- Photo demi-écran droite -->
+      <div class="origines-section__img-wrap fade-up fade-up--d1">
+        <img src="./assets/photos/sava-landscape.jpg"
+             alt="Paysage de la région Sava, nord-est de Madagascar — berceau de la vanille Bourbon"
+             class="origines-section__img"
+             loading="lazy">
+        <p class="origines-section__img-caption">Région Sava — Sambava, Madagascar</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 4 — LA MAISON
+     Fond crème
+     ════════════════════════════════════════════════════════════════════════ -->
+<section class="section section--cream maison-section" id="la-maison" aria-labelledby="maison-titre">
+  <div class="container">
+    <div class="grid-2 maison-section__inner">
+
+      <!-- Contenu -->
+      <div class="maison-section__content">
+
+        <span class="section__label fade-up">La Maison</span>
+
+        <h2 class="section__title fade-up fade-up--d1" id="maison-titre">
+          Une maison de négoce,<br>gousse par gousse.
+        </h2>
+
+        <p class="maison-section__text t-body fade-up fade-up--d2">
+          Depuis Marseille, Ova Vanilla approvisionne boulangers, pâtissiers et restaurateurs
+          en gousses et extraits sélectionnés auprès des coopératives de la Sava.
+          Notre métier : identifier les meilleurs lots, les contrôler à réception,
+          les mettre à disposition des professionnels qui exigent une matière première
+          fiable et documentée.
+        </p>
+
+        <!-- Trois piliers avec icônes SVG trait fin -->
+        <div class="pillars fade-up fade-up--d2">
+
+          <div class="pillar">
+            <div class="pillar__icon">
+              <img src="./assets/icons/selection.svg" alt="" aria-hidden="true" width="20" height="20">
+            </div>
+            <div>
+              <h3 class="pillar__title">Sélection directe</h3>
+              <p class="pillar__desc">
+                Relations directes avec les coopératives de la Sava. Aucun courtier,
+                aucun lot non identifié.
+              </p>
+            </div>
+          </div>
+
+          <div class="pillar">
+            <div class="pillar__icon">
+              <img src="./assets/icons/tracabilite.svg" alt="" aria-hidden="true" width="20" height="20">
+            </div>
+            <div>
+              <h3 class="pillar__title">Contrôle à réception</h3>
+              <p class="pillar__desc">
+                Chaque lot contrôlé à Marseille : taux d'humidité, calibre, organoleptique.
+                Bon de contrôle joint à chaque livraison.
+              </p>
+            </div>
+          </div>
+
+          <div class="pillar">
+            <div class="pillar__icon">
+              <img src="./assets/icons/livraison.svg" alt="" aria-hidden="true" width="20" height="20">
+            </div>
+            <div>
+              <h3 class="pillar__title">Livraison B2B</h3>
+              <p class="pillar__desc">
+                Conditionnements professionnels, expédition nationale et internationale.
+                Tarification sur devis selon volume et régularité.
+              </p>
+            </div>
+          </div>
+
+        </div><!-- /pillars -->
+
+        <div style="margin-top:32px" class="fade-up fade-up--d3">
+          <a href="./la-maison.html" class="btn btn--outline">À propos de la Maison</a>
+        </div>
+
+      </div><!-- /maison-section__content -->
+
+      <!-- Image -->
+      <div class="maison-section__img-wrap fade-up fade-up--d1">
+        <img src="./assets/photos/marseille-entrepot.jpg"
+             alt="Contrôle des lots de vanille à Marseille — Ova Vanilla"
+             class="maison-section__img"
+             loading="lazy">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 5 — ESPACE PROFESSIONNELS
+     Fond blanc cassé
+     ════════════════════════════════════════════════════════════════════════ -->
+<section class="section section--paper pros-section" id="professionnels" aria-labelledby="pros-titre">
+  <div class="container">
+
+    <div class="pros-section__inner">
+
+      <!-- En-tête -->
+      <div class="pros-section__header">
+        <span class="section__label fade-up">Professionnels</span>
+        <h2 class="section__title fade-up fade-up--d1" id="pros-titre">
+          Vous approvisionnez<br>une brigade&nbsp;?
+        </h2>
+      </div>
+
+      <!-- Texte + CTA -->
+      <div class="pros-section__body fade-up fade-up--d2">
+        <p class="t-body" style="opacity:0.8;max-width:56ch">
+          Ova Vanilla travaille en direct avec les boulangers, pâtissiers, restaurateurs
+          et distributeurs. Commandes à partir de 500 g. Délais sous 5 jours ouvrés.
+          Devis personnalisé selon volume et grade.
+        </p>
+        <div class="pros-section__ctas">
+          <a href="./professionnels.html#devis" class="btn btn--primary">
+            Demander un devis
+          </a>
+          <a href="./professionnels.html#echantillon" class="btn btn--outline">
+            Demander un échantillon
+          </a>
+        </div>
+      </div>
+
+      <!-- Bloc de métriques -->
+      <div class="pros-section__metrics fade-up fade-up--d3">
+        <div class="pros-metric">
+          <span class="pros-metric__val">500 g</span>
+          <span class="pros-metric__label">Commande minimum</span>
+        </div>
+        <div class="pros-metric">
+          <span class="pros-metric__val">J + 5</span>
+          <span class="pros-metric__label">Délai de livraison</span>
+        </div>
+        <div class="pros-metric">
+          <span class="pros-metric__val">B2B</span>
+          <span class="pros-metric__label">Exclusivement professionnels</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 6 — INSTAGRAM
+     Fond crème — 6 posts hardcodés
+     ════════════════════════════════════════════════════════════════════════ -->
+<section class="section section--cream instagram-section" id="instagram" aria-labelledby="insta-titre">
+  <div class="container">
+
+    <div class="instagram-section__header fade-up">
+      <div>
+        <span class="section__label">Réseaux</span>
+        <h2 class="section__title" id="insta-titre" style="font-size:clamp(1.5rem,3vw,2.5rem)">
+          @ovavanilla
+        </h2>
+      </div>
+      <a href="https://www.instagram.com/ovavanilla"
+         target="_blank" rel="noopener noreferrer"
+         class="link-arrow t-nav" style="color:var(--ink)">
+        Suivre sur Instagram <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <!-- Grille 3 colonnes — 6 posts simulés -->
+    <div class="instagram-grid fade-up fade-up--d1"
+         role="list"
+         aria-label="Publications Instagram @ovavanilla">
+
+      <!-- Post 1 — Fond crème · Logo -->
+      <div class="insta-post insta-post--cream" role="listitem"
+           tabindex="0" aria-label="Instagram : Ova Vanilla — Maison de négoce">
+        <div class="insta-post__inner">
+          <div class="insta-post__logo-wrap">
+            <span class="insta-post__logo-text">OV</span>
+          </div>
+          <p class="insta-post__caption-bar">SAMBAVA — MARSEILLE · MAISON DE NÉGOCE</p>
+        </div>
+        <div class="insta-post__meta">
+          <span class="insta-post__handle">ovavanilla</span>
+          <span class="insta-post__text">Nouvelle récolte 2025 — les gousses arrivent à Marseille cette semaine. #vanille #madagascar</span>
+        </div>
+      </div>
+
+      <!-- Post 2 — Fond sombre · Gousses -->
+      <div class="insta-post insta-post--dark" role="listitem"
+           tabindex="0" aria-label="Instagram : Lot SV-254 · Gousses Noires">
+        <div class="insta-post__inner">
+          <div class="insta-post__dark-img">
+            <span class="insta-post__lot-label">LOT SV-254 · RÉCOLTE 2025</span>
+            <span class="insta-post__grade-italic">Gousses Noires — 17 cm</span>
+          </div>
+        </div>
+        <div class="insta-post__meta">
+          <span class="insta-post__handle">ovavanilla</span>
+          <span class="insta-post__text">Lot SV-254 · gousses noires TK · 17 cm. Disponible sur devis pour les professionnels.</span>
+        </div>
+      </div>
+
+      <!-- Post 3 — Fond vert forêt · Citation -->
+      <div class="insta-post insta-post--forest" role="listitem"
+           tabindex="0" aria-label="Instagram : Origines — La Sava">
+        <div class="insta-post__inner">
+          <p class="insta-post__surtitre">ORIGINES</p>
+          <blockquote class="insta-post__quote">
+            « La Sava, c'est trois vallées et un savoir-faire qui se transmet. »
+          </blockquote>
+        </div>
+        <div class="insta-post__meta">
+          <span class="insta-post__handle">ovavanilla</span>
+          <span class="insta-post__text">Nos vanilles proviennent des coopératives de la Sava, région historique de la vanille malgache.</span>
+        </div>
+      </div>
+
+      <!-- Post 4 — Fond blanc cassé · Fiche grade -->
+      <div class="insta-post insta-post--paper" role="listitem"
+           tabindex="0" aria-label="Instagram : Fiche produit Gourmet TK Noire">
+        <div class="insta-post__inner">
+          <span class="insta-post__fiche-badge">FICHE PRODUIT</span>
+          <p class="insta-post__fiche-name">Gourmet TK Noire</p>
+          <div class="insta-post__fiche-specs">
+            <span>Sambava · Madagascar</span>
+            <span>17 cm · 30-35% H₂O</span>
+            <span>Récolte 2025 · Lot SV-254</span>
+          </div>
+          <span class="insta-post__fiche-mono">OV</span>
+        </div>
+        <div class="insta-post__meta">
+          <span class="insta-post__handle">ovavanilla</span>
+          <span class="insta-post__text">Grade Gourmet · gousses noires fendillées, taux d'humidité 30-35%.</span>
+        </div>
+      </div>
+
+      <!-- Post 5 — Fond crème · Palette couleurs -->
+      <div class="insta-post insta-post--palette" role="listitem"
+           tabindex="0" aria-label="Instagram : Palette de couleurs Ova Vanilla">
+        <div class="insta-post__inner">
+          <div class="insta-post__swatches">
+            <div class="insta-post__swatch" style="background:#F0E6D2">
+              <span>#F0E6D2</span>
+            </div>
+            <div class="insta-post__swatch" style="background:#1F3528">
+              <span style="color:#F0E6D2">#1F3528</span>
+            </div>
+            <div class="insta-post__swatch" style="background:#B8935A">
+              <span style="color:#F7F1E5">#B8935A</span>
+            </div>
+          </div>
+        </div>
+        <div class="insta-post__meta">
+          <span class="insta-post__handle">ovavanilla</span>
+          <span class="insta-post__text">La nuance d'une vanille mature se lit à l'œil autant qu'au nez.</span>
+        </div>
+      </div>
+
+      <!-- Post 6 — Fond or · Rendez-vous Sirha -->
+      <div class="insta-post insta-post--event" role="listitem"
+           tabindex="0" aria-label="Instagram : Rendez-vous Sirha Lyon 2026">
+        <div class="insta-post__inner">
+          <p class="insta-post__event-label">RENDEZ-VOUS</p>
+          <p class="insta-post__event-name">Sirha Lyon</p>
+          <p class="insta-post__event-date">24 — 28 · 01 · 2026</p>
+        </div>
+        <div class="insta-post__meta">
+          <span class="insta-post__handle">ovavanilla</span>
+          <span class="insta-post__text">Retrouvez-nous au Sirha Lyon du 24 au 28 janvier 2026. Stand pavillon 3 · E42.</span>
+        </div>
+      </div>
+
+    </div><!-- /instagram-grid -->
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     FOOTER
+     ════════════════════════════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+
+    <div class="footer__inner">
+
+      <!-- Colonne marque -->
+      <div>
+        <img src="./assets/logo-white.png" alt="Ova Vanilla" class="footer__brand-logo" width="130" height="38">
+        <p class="footer__tagline">De la Sava aux maisons de bouche.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/ovavanilla"
+             target="_blank" rel="noopener noreferrer"
+             class="footer__social-link" aria-label="Instagram @ovavanilla">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <p class="footer__col-title">Navigation</p>
+        <nav class="footer__nav" aria-label="Navigation pied de page">
+          <a href="./la-maison.html"      class="footer__nav-link">La Maison</a>
+          <a href="./nos-vanilles.html"   class="footer__nav-link">Nos Vanilles</a>
+          <a href="./origines.html"        class="footer__nav-link">Origines</a>
+          <a href="./professionnels.html" class="footer__nav-link">Professionnels</a>
+          <a href="./contact.html"         class="footer__nav-link">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Gamme -->
+      <div>
+        <p class="footer__col-title">La Gamme</p>
+        <nav class="footer__nav" aria-label="Gamme produits">
+          <a href="./nos-vanilles.html#tk-noire" class="footer__nav-link">Gourmet TK Noire</a>
+          <a href="./nos-vanilles.html#split"    class="footer__nav-link">Split Gourmet</a>
+          <a href="./nos-vanilles.html#poudre"   class="footer__nav-link">Poudre de Vanille</a>
+          <a href="./nos-vanilles.html#extrait"  class="footer__nav-link">Extrait Naturel</a>
+        </nav>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <p class="footer__col-title">Contact</p>
+        <div class="footer__contact-row">
+          <span class="footer__contact-label">Adresse</span>
+          <span class="footer__contact-value">[ADRESSE_MARSEILLE]</span>
+        </div>
+        <div class="footer__contact-row">
+          <span class="footer__contact-label">Téléphone</span>
+          <span class="footer__contact-value">[TELEPHONE]</span>
+        </div>
+        <div class="footer__contact-row">
+          <span class="footer__contact-label">Email</span>
+          <span class="footer__contact-value">[EMAIL_PRO]</span>
+        </div>
+      </div>
+
+    </div><!-- /footer__inner -->
+
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 Ova Vanilla — Tous droits réservés</p>
+      <div class="footer__legal-links">
+        <a href="./mentions-legales.html" class="footer__legal-link">Mentions légales</a>
+        <a href="./mentions-legales.html#confidentialite" class="footer__legal-link">Politique de confidentialité</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════
+     SCRIPTS
+     ════════════════════════════════════════════════════════════════════════ -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="./js/lang.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/instagram.js"></script>
+
+</body>
+</html>

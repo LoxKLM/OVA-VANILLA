@@ -1,0 +1,77 @@
+{
+  "fr": {
+    "nav": {
+      "la_maison": "La Maison",
+      "nos_vanilles": "Nos Vanilles",
+      "origines": "Origines",
+      "professionnels": "Professionnels",
+      "contact": "Contact",
+      "cta_devis": "Demander un devis ↗"
+    },
+    "hero": {
+      "label": "Maison de Négoce — Marseille · Sambava",
+      "titre": "La vanille Gourmet de Madagascar.",
+      "tagline": "Récolte 2025 — gousses noires, extraits et poudres pour boulangers, pâtissiers et restaurateurs. Sélection directe auprès des coopératives de la Sava, contrôle à l'arrivée à Marseille.",
+      "cta_primaire": "Demander un échantillon",
+      "cta_secondaire": "Voir les grades →"
+    },
+    "vanilles": {
+      "label": "La Gamme",
+      "titre": "Nos Vanilles",
+      "sous_titre": "Sélection par grade, lot tracé, livraison B2B.",
+      "sur_devis": "Sur devis",
+      "voir_fiche": "Voir la fiche →"
+    },
+    "origines": {
+      "label": "La Source",
+      "titre": "De la Sava aux maisons de bouche.",
+      "texte": "Depuis Marseille, Ova Vanilla approvisionne boulangers, pâtissiers et restaurateurs en gousses et extraits sélectionnés auprès des coopératives de la Sava. Des lots tracés, des grades lisibles, une exigence de fraîcheur qui ne transige pas.",
+      "cta": "Découvrir les origines"
+    },
+    "maison": {
+      "label": "La Maison",
+      "titre": "Une maison de négoce, gousse par gousse.",
+      "cta": "À propos de la Maison"
+    },
+    "pros": {
+      "label": "Professionnels",
+      "titre": "Vous approvisionnez une brigade ?",
+      "cta_devis": "Demander un devis",
+      "cta_echantillon": "Demander un échantillon"
+    },
+    "footer": {
+      "tagline": "De la Sava aux maisons de bouche.",
+      "mentions": "Mentions légales",
+      "confidentialite": "Politique de confidentialité",
+      "droits": "© 2025 Ova Vanilla — Tous droits réservés"
+    }
+  },
+  "en": {
+    "nav": {
+      "la_maison": "[PLACEHOLDER_EN — About]",
+      "nos_vanilles": "[PLACEHOLDER_EN — Our Vanillas]",
+      "origines": "[PLACEHOLDER_EN — Origins]",
+      "professionnels": "[PLACEHOLDER_EN — Professionals]",
+      "contact": "[PLACEHOLDER_EN — Contact]",
+      "cta_devis": "[PLACEHOLDER_EN — Request a quote ↗]"
+    },
+    "hero": {
+      "label": "[PLACEHOLDER_EN — Trading House — Marseille · Sambava]",
+      "titre": "[PLACEHOLDER_EN — Gourmet Vanilla from Madagascar.]",
+      "tagline": "[PLACEHOLDER_EN — 2025 Harvest — black pods, extracts and powders for bakers, pastry chefs and restaurateurs. Direct selection from Sava cooperatives, quality control on arrival in Marseille.]",
+      "cta_primaire": "[PLACEHOLDER_EN — Request a sample]",
+      "cta_secondaire": "[PLACEHOLDER_EN — See our grades →]"
+    },
+    "vanilles": {
+      "label": "[PLACEHOLDER_EN — Our Range]",
+      "titre": "[PLACEHOLDER_EN — Our Vanillas]",
+      "sous_titre": "[PLACEHOLDER_EN — Selected by grade, traceable lots, B2B delivery.]",
+      "sur_devis": "[PLACEHOLDER_EN — On quote]",
+      "voir_fiche": "[PLACEHOLDER_EN — View product sheet →]"
+    },
+    "footer": {
+      "tagline": "[PLACEHOLDER_EN — From the Sava to the finest kitchens.]",
+      "droits": "[PLACEHOLDER_EN — © 2025 Ova Vanilla — All rights reserved]"
+    }
+  }
+}

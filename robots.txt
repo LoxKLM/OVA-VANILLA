@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /webhook.php
+Disallow: /deploy.sh
+Disallow: /deploy.log
+Disallow: /webhook.log
+Disallow: /.env
+Disallow: /backend/
+Disallow: /templates/
+Disallow: /tmp/
+
+Sitemap: https://ovavanilla.fr/sitemap.xml

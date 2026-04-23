@@ -1,0 +1,150 @@
+/* ────────────────────────────────────────────────────────────────────────────
+   typography.css — Ova Vanilla
+   Système typographique éditorial — Cormorant Garamond + Inter
+   ──────────────────────────────────────────────────────────────────────────── */
+
+/* ── Corps de page ──────────────────────────────────────────────────────── */
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--deep);
+  background-color: var(--paper);
+}
+
+/* ── Titres — Cormorant Garamond ────────────────────────────────────────── */
+
+/* Display — hero & grandes entrées */
+.t-display {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+}
+
+/* H1 de page */
+.t-h1,
+h1.t-h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+}
+
+/* H2 de section */
+.t-h2,
+h2.t-h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+/* H3 de sous-section */
+.t-h3,
+h3.t-h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Titre de carte ou pilier */
+.t-h4 {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* ── Corps — Inter ──────────────────────────────────────────────────────── */
+
+/* Texte courant */
+.t-body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+/* Texte légèrement plus grand */
+.t-body-lg {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  font-weight: 300;
+  line-height: 1.85;
+}
+
+/* Corps de texte réduit */
+.t-body-sm {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+/* ── Labels & surtitre ──────────────────────────────────────────────────── */
+
+/* Overline / label de section */
+.t-label {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* Badge de fiche produit */
+.t-badge {
+  font-family: var(--font-sans);
+  font-size: 0.5625rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+.t-nav {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Caption / légende */
+.t-caption {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ── Citation — Pullquote ────────────────────────────────────────────────── */
+
+.t-pullquote {
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+/* ── Utilitaires typographiques ─────────────────────────────────────────── */
+
+.t-serif { font-family: var(--font-serif); }
+.t-sans  { font-family: var(--font-sans); }
+.t-italic { font-style: italic; }
+
+/* Couleurs de texte utilitaires */
+.t-cream  { color: var(--cream); }
+.t-gold   { color: var(--gold); }
+.t-ink    { color: var(--ink); }
+.t-deep   { color: var(--deep); }
+.t-muted  { opacity: 0.65; }

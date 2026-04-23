@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace Professionnels — Devis & Échantillons | Ova Vanilla</title>
+  <meta name="description" content="Ova Vanilla s'adresse aux boulangers, pâtissiers, restaurateurs et distributeurs. Demandez un devis ou un échantillon de vanille Gourmet Madagascar. Livraison B2B France et international.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ovavanilla.fr/professionnels">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages/professionnels.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<header class="nav" id="nav" role="banner">
+  <a href="./index.html" class="nav__logo" aria-label="Ova Vanilla — Accueil">
+    <img src="./assets/logo.png" alt="Ova Vanilla" width="160" height="40" loading="eager">
+  </a>
+  <nav class="nav__links" aria-label="Navigation principale">
+    <a href="./la-maison.html" class="nav__link">La Maison</a>
+    <a href="./nos-vanilles.html" class="nav__link">Nos Vanilles</a>
+    <a href="./origines.html" class="nav__link">Origines</a>
+    <a href="./professionnels.html" class="nav__link nav__link--active" aria-current="page">Professionnels</a>
+    <a href="./contact.html" class="nav__link">Contact</a>
+  </nav>
+  <div class="nav__right">
+    <div class="nav__lang-switcher">
+      <button class="nav__lang nav__lang--active" onclick="switchLang('fr')">FR</button>
+      <span class="nav__lang-sep">/</span>
+      <button class="nav__lang" onclick="switchLang('en')">EN</button>
+    </div>
+    <a href="#devis" class="btn btn--nav">Demander un devis ↗</a>
+    <button class="nav__burger" id="nav-burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-mobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav__mobile" id="nav-mobile" role="dialog" aria-modal="true" aria-label="Menu">
+  <a href="./la-maison.html" class="nav__mobile-link">La Maison</a>
+  <a href="./nos-vanilles.html" class="nav__mobile-link">Nos Vanilles</a>
+  <a href="./origines.html" class="nav__mobile-link">Origines</a>
+  <a href="./professionnels.html" class="nav__mobile-link">Professionnels</a>
+  <a href="./contact.html" class="nav__mobile-link">Contact</a>
+  <a href="#devis" class="btn btn--primary btn--lg" style="margin-top:16px">Demander un devis ↗</a>
+</div>
+
+<main id="main-content">
+
+  <!-- En-tête page -->
+  <section class="page-hero" style="background-color:var(--ink);padding-top:calc(var(--space-section) + var(--nav-height));padding-bottom:var(--space-section)">
+    <div class="container">
+      <span class="section__label">Espace B2B</span>
+      <h1 class="page-hero__title" style="margin:12px 0 16px">Professionnels</h1>
+      <p class="page-hero__subtitle">
+        Boulangers, pâtissiers, chocolatiers, restaurateurs, distributeurs —
+        Ova Vanilla vous approvisionne directement depuis Marseille.
+      </p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:32px">
+        <a href="#devis"      class="btn btn--gold">Demander un devis</a>
+        <a href="#echantillon" class="btn btn--secondary">Demander un échantillon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conditions générales B2B -->
+  <section class="section section--paper">
+    <div class="container">
+
+      <div class="grid-2 pros-conditions">
+        <div>
+          <span class="section__label fade-up">Conditions</span>
+          <h2 class="section__title fade-up fade-up--d1">Comment travailler<br>avec Ova Vanilla.</h2>
+          <p class="t-body fade-up fade-up--d2" style="opacity:0.8;margin-top:24px;max-width:52ch">
+            Notre offre est structurée autour de la commande régulière, du conditionnement
+            professionnel et d'une traçabilité documentée — les pré-requis d'une activité
+            de production sérieuse. Chaque relation commerciale commence par un échange
+            direct sur vos besoins de volume et de grade.
+          </p>
+        </div>
+
+        <!-- Tableau de conditions -->
+        <div class="pros-tableau fade-up fade-up--d2">
+          <div class="pros-tableau__ligne">
+            <span class="pros-tableau__label">Commande minimum</span>
+            <span class="pros-tableau__valeur">500 g — gousses / 250 g — poudre</span>
+          </div>
+          <div class="pros-tableau__ligne">
+            <span class="pros-tableau__label">Délai de livraison</span>
+            <span class="pros-tableau__valeur">5 jours ouvrés — France métropolitaine</span>
+          </div>
+          <div class="pros-tableau__ligne">
+            <span class="pros-tableau__label">Zone de livraison</span>
+            <span class="pros-tableau__valeur">France &amp; International (selon volume)</span>
+          </div>
+          <div class="pros-tableau__ligne">
+            <span class="pros-tableau__label">Tarification</span>
+            <span class="pros-tableau__valeur">Sur devis — volume et régularité</span>
+          </div>
+          <div class="pros-tableau__ligne">
+            <span class="pros-tableau__label">Traçabilité</span>
+            <span class="pros-tableau__valeur">Bon de contrôle joint à chaque livraison</span>
+          </div>
+          <div class="pros-tableau__ligne">
+            <span class="pros-tableau__label">Paiement</span>
+            <span class="pros-tableau__valeur">Virement — conditions négociées</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       FORMULAIRE DEVIS
+       ════════════════════════════════════════════════════════════════════════ -->
+  <section class="section section--ink" id="devis" aria-labelledby="devis-titre">
+    <div class="container container--narrow">
+
+      <span class="section__label fade-up">Formulaire</span>
+      <h2 class="section__title fade-up fade-up--d1" id="devis-titre"
+          style="color:var(--cream);margin:12px 0 8px">
+        Demander un devis.
+      </h2>
+      <p class="t-body fade-up fade-up--d2" style="color:var(--cream);opacity:0.7;margin-bottom:40px">
+        Renseignez votre activité et vos besoins. Nous vous répondons sous 48 h ouvrées.
+      </p>
+
+      <form class="form form--dark fade-up" id="form-devis" novalidate>
+
+        <!-- Champ honeypot anti-spam — invisible pour les humains -->
+        <div class="form__honeypot" aria-hidden="true">
+          <label for="hp-devis">Ne pas remplir</label>
+          <input type="text" id="hp-devis" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <!-- Nom + Prénom -->
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label form__label--light" for="devis-prenom">Prénom *</label>
+            <input class="form__input" type="text" id="devis-prenom" name="prenom"
+                   required placeholder="Jean" autocomplete="given-name">
+            <span class="form__error">Ce champ est obligatoire.</span>
+          </div>
+          <div class="form__group">
+            <label class="form__label form__label--light" for="devis-nom">Nom *</label>
+            <input class="form__input" type="text" id="devis-nom" name="nom"
+                   required placeholder="Dupont" autocomplete="family-name">
+            <span class="form__error">Ce champ est obligatoire.</span>
+          </div>
+        </div>
+
+        <!-- Email + Téléphone -->
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label form__label--light" for="devis-email">Email professionnel *</label>
+            <input class="form__input" type="email" id="devis-email" name="email"
+                   required placeholder="jean@boulangerie.fr" autocomplete="email">
+            <span class="form__error">Adresse email invalide.</span>
+          </div>
+          <div class="form__group">
+            <label class="form__label form__label--light" for="devis-tel">Téléphone</label>
+            <input class="form__input" type="tel" id="devis-tel" name="tel"
+                   placeholder="+33 6 00 00 00 00" autocomplete="tel">
+          </div>
+        </div>
+
+        <!-- Société + Métier -->
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label form__label--light" for="devis-societe">Société *</label>
+            <input class="form__input" type="text" id="devis-societe" name="societe"
+                   required placeholder="Boulangerie Dupont" autocomplete="organization">
+            <span class="form__error">Ce champ est obligatoire.</span>
+          </div>
+          <div class="form__group">
+            <label class="form__label form__label--light" for="devis-metier">Activité *</label>
+            <select class="form__select" id="devis-metier" name="metier" required>
+              <option value="" disabled selected>Sélectionner…</option>
+              <option value="boulangerie">Boulangerie</option>
+              <option value="patisserie">Pâtisserie</option>
+              <option value="restauration">Restauration</option>
+              <option value="chocolaterie">Chocolaterie / Confiserie</option>
+              <option value="agroalimentaire">Industrie agroalimentaire</option>
+              <option value="distribution">Distribution / Grossiste</option>
+              <option value="autre">Autre</option>
+            </select>
+            <span class="form__error">Veuillez sélectionner votre activité.</span>
+          </div>
+        </div>
+
+        <!-- Grade + Volume -->
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label form__label--light" for="devis-grade">Grade souhaité *</label>
+            <select class="form__select" id="devis-grade" name="grade" required>
+              <option value="" disabled selected>Sélectionner…</option>
+              <option value="tk-noire">Gourmet TK Noire (Grade A)</option>
+              <option value="split">Split Gourmet (Grade B)</option>
+              <option value="poudre">Poudre de Vanille (pur broyat)</option>
+              <option value="extrait">Extrait Naturel (double fold)</option>
+              <option value="plusieurs">Plusieurs grades</option>
+              <option value="a-definir">À définir ensemble</option>
+            </select>
+            <span class="form__error">Veuillez sélectionner un grade.</span>
+          </div>
+          <div class="form__group">
+            <label class="form__label form__label--light" for="devis-volume">Volume estimé</label>
+            <select class="form__select" id="devis-volume" name="volume">
+              <option value="" disabled selected>Sélectionner…</option>
+              <option value="500g-1kg">500 g — 1 kg</option>
+              <option value="1-5kg">1 — 5 kg</option>
+              <option value="5-20kg">5 — 20 kg</option>
+              <option value="20kg+">+ de 20 kg</option>
+              <option value="nsp">Je ne sais pas encore</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="form__group">
+          <label class="form__label form__label--light" for="devis-message">Précisions / Message</label>
+          <textarea class="form__textarea" id="devis-message" name="message"
+                    placeholder="Décrivez votre besoin, votre fréquence de commande, vos contraintes particulières…"></textarea>
+        </div>
+
+        <!-- Message de succès -->
+        <div class="form__success" role="alert">
+          <p>Votre demande de devis a bien été envoyée. Nous vous répondons sous 48 h ouvrées.</p>
+        </div>
+
+        <!-- Soumission -->
+        <div>
+          <button type="submit" class="btn btn--gold btn--lg">
+            Envoyer ma demande de devis
+          </button>
+          <p class="form__hint" style="margin-top:12px;color:var(--cream);opacity:0.45">
+            * Champs obligatoires — Vos données ne sont pas revendues ni partagées.
+          </p>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       FORMULAIRE ÉCHANTILLON
+       ════════════════════════════════════════════════════════════════════════ -->
+  <section class="section section--paper" id="echantillon" aria-labelledby="ech-titre">
+    <div class="container container--narrow">
+
+      <span class="section__label fade-up">Avant de commander</span>
+      <h2 class="section__title fade-up fade-up--d1" id="ech-titre" style="margin:12px 0 8px">
+        Demander un échantillon.
+      </h2>
+      <p class="t-body fade-up fade-up--d2" style="opacity:0.75;margin-bottom:40px">
+        Nous expédions des échantillons de grade aux professionnels qualifiés,
+        sur simple demande. Frais de port à notre charge.
+      </p>
+
+      <form class="form fade-up" id="form-echantillon" novalidate>
+
+        <!-- Honeypot -->
+        <div class="form__honeypot" aria-hidden="true">
+          <label for="hp-ech">Ne pas remplir</label>
+          <input type="text" id="hp-ech" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <!-- Nom + Email -->
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label" for="ech-nom">Nom complet *</label>
+            <input class="form__input" type="text" id="ech-nom" name="nom"
+                   required placeholder="Jean Dupont" autocomplete="name">
+            <span class="form__error">Ce champ est obligatoire.</span>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="ech-email">Email professionnel *</label>
+            <input class="form__input" type="email" id="ech-email" name="email"
+                   required placeholder="jean@boulangerie.fr" autocomplete="email">
+            <span class="form__error">Adresse email invalide.</span>
+          </div>
+        </div>
+
+        <!-- Société + Grade -->
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label" for="ech-societe">Société *</label>
+            <input class="form__input" type="text" id="ech-societe" name="societe"
+                   required placeholder="Boulangerie Dupont" autocomplete="organization">
+            <span class="form__error">Ce champ est obligatoire.</span>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="ech-grade">Grade souhaité *</label>
+            <select class="form__select" id="ech-grade" name="grade" required>
+              <option value="" disabled selected>Sélectionner…</option>
+              <option value="tk-noire">Gourmet TK Noire (Grade A)</option>
+              <option value="split">Split Gourmet (Grade B)</option>
+              <option value="poudre">Poudre de Vanille</option>
+            </select>
+            <span class="form__error">Veuillez sélectionner un grade.</span>
+          </div>
+        </div>
+
+        <!-- Adresse de livraison -->
+        <div class="form__group">
+          <label class="form__label" for="ech-adresse">Adresse de livraison *</label>
+          <input class="form__input" type="text" id="ech-adresse" name="adresse"
+                 required placeholder="12 rue de la République, 13001 Marseille"
+                 autocomplete="street-address">
+          <span class="form__error">Ce champ est obligatoire.</span>
+        </div>
+
+        <!-- Message -->
+        <div class="form__group">
+          <label class="form__label" for="ech-message">Précisions (optionnel)</label>
+          <textarea class="form__textarea" id="ech-message" name="message"
+                    placeholder="Indiquez votre usage prévu et votre activité si cela n'est pas explicite…"
+                    style="min-height:90px"></textarea>
+        </div>
+
+        <!-- Succès -->
+        <div class="form__success" role="alert">
+          <p>Votre demande d'échantillon a bien été reçue. Expédition sous 5 jours ouvrés.</p>
+        </div>
+
+        <!-- Soumission -->
+        <div>
+          <button type="submit" class="btn btn--primary btn--lg">
+            Envoyer ma demande d'échantillon
+          </button>
+          <p class="form__hint" style="margin-top:12px">
+            * Champs obligatoires — Frais de port offerts pour les professionnels.
+          </p>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <img src="./assets/logo-white.png" alt="Ova Vanilla" class="footer__brand-logo" width="130" height="38">
+        <p class="footer__tagline">De la Sava aux maisons de bouche.</p>
+      </div>
+      <div>
+        <p class="footer__col-title">Navigation</p>
+        <nav class="footer__nav"><a href="./la-maison.html" class="footer__nav-link">La Maison</a><a href="./nos-vanilles.html" class="footer__nav-link">Nos Vanilles</a><a href="./origines.html" class="footer__nav-link">Origines</a><a href="./professionnels.html" class="footer__nav-link">Professionnels</a><a href="./contact.html" class="footer__nav-link">Contact</a></nav>
+      </div>
+      <div>
+        <p class="footer__col-title">Formulaires</p>
+        <nav class="footer__nav"><a href="#devis" class="footer__nav-link">Demander un devis</a><a href="#echantillon" class="footer__nav-link">Demander un échantillon</a></nav>
+      </div>
+      <div>
+        <p class="footer__col-title">Contact</p>
+        <div class="footer__contact-row"><span class="footer__contact-label">Email</span><span class="footer__contact-value">[EMAIL_PRO]</span></div>
+        <div class="footer__contact-row"><span class="footer__contact-label">Téléphone</span><span class="footer__contact-value">[TELEPHONE]</span></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 Ova Vanilla — Tous droits réservés</p>
+      <div class="footer__legal-links"><a href="./mentions-legales.html" class="footer__legal-link">Mentions légales</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="./js/lang.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/forms.js"></script>
+</body>
+</html>

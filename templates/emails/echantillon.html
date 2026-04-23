@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demande d'échantillon — Ova Vanilla</title>
+  <style>
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      background-color: #F7F1E5;
+      color: #0F1A13;
+    }
+    .wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #F0E6D2;
+    }
+    .header {
+      background-color: #1F3528;
+      padding: 32px 40px;
+      text-align: center;
+    }
+    .header__title {
+      font-family: Georgia, serif;
+      font-size: 28px;
+      font-weight: 400;
+      color: #F0E6D2;
+      margin: 0;
+      letter-spacing: 0.02em;
+    }
+    .header__sub {
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #B8935A;
+      margin: 8px 0 0;
+    }
+    .body {
+      padding: 40px;
+    }
+    .intro {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: #0F1A13;
+      margin-bottom: 32px;
+    }
+    .section-title {
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #0F1A13;
+      opacity: 0.5;
+      margin: 0 0 12px;
+      border-bottom: 1px solid rgba(184,147,90,0.3);
+      padding-bottom: 8px;
+    }
+    .field-row {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    .field-label {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0F1A13;
+      opacity: 0.55;
+      width: 140px;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+    .field-value {
+      font-size: 14px;
+      font-weight: 300;
+      color: #0F1A13;
+      line-height: 1.6;
+    }
+    .field-value strong {
+      font-weight: 500;
+    }
+    .adresse-box {
+      background-color: #F7F1E5;
+      border: 1px solid rgba(184,147,90,0.25);
+      border-left: 3px solid #B8935A;
+      padding: 16px 20px;
+      margin-top: 4px;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: #0F1A13;
+    }
+    .message-box {
+      background-color: #F7F1E5;
+      border: 1px solid rgba(184,147,90,0.25);
+      padding: 20px;
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: #0F1A13;
+    }
+    .action-banner {
+      background-color: #F7F1E5;
+      border: 1px solid rgba(184,147,90,0.35);
+      padding: 20px;
+      margin-top: 28px;
+      text-align: center;
+    }
+    .action-banner p {
+      font-size: 13px;
+      font-weight: 400;
+      color: #1F3528;
+      margin: 0 0 12px;
+    }
+    .action-banner a {
+      display: inline-block;
+      background-color: #B8935A;
+      color: #F0E6D2;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 12px 24px;
+    }
+    .footer-email {
+      background-color: #1F3528;
+      padding: 24px 40px;
+      text-align: center;
+    }
+    .footer-email p {
+      font-size: 12px;
+      font-weight: 300;
+      color: #F0E6D2;
+      opacity: 0.6;
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="header">
+      <h1 class="header__title">Ova Vanilla</h1>
+      <p class="header__sub">Demande d'échantillon gratuit</p>
+    </div>
+
+    <div class="body">
+
+      <p class="intro">
+        Une demande d'échantillon a été soumise via le site ovavanilla.fr.
+        Préparez l'envoi de 10 g du grade demandé à l'adresse ci-dessous.
+      </p>
+
+      <p class="section-title">Contact</p>
+
+      <div class="field-row">
+        <span class="field-label">Nom</span>
+        <span class="field-value"><strong>{{nom}}</strong></span>
+      </div>
+      <div class="field-row">
+        <span class="field-label">Email</span>
+        <span class="field-value"><a href="mailto:{{email}}" style="color:#1F3528">{{email}}</a></span>
+      </div>
+      <div class="field-row">
+        <span class="field-label">Société</span>
+        <span class="field-value">{{societe}}</span>
+      </div>
+
+      <p class="section-title" style="margin-top:28px">Échantillon demandé</p>
+
+      <div class="field-row">
+        <span class="field-label">Grade</span>
+        <span class="field-value"><strong>{{grade}}</strong></span>
+      </div>
+
+      <p class="section-title" style="margin-top:28px">Adresse de livraison</p>
+
+      <div class="adresse-box">
+        {{adresse}}
+      </div>
+
+      <p class="section-title" style="margin-top:28px">Message</p>
+
+      <div class="message-box">
+        {{message}}
+      </div>
+
+      <div class="action-banner">
+        <p>Pensez à envoyer un email de confirmation à {{nom}} une fois l'échantillon expédié.</p>
+        <a href="mailto:{{email}}?subject=Votre échantillon Ova Vanilla est en route">
+          Confirmer l'expédition →
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-email">
+      <p>Ova Vanilla — Marseille</p>
+      <p>Ce message a été envoyé depuis le formulaire ovavanilla.fr</p>
+    </div>
+
+  </div>
+</body>
+</html>

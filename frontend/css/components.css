@@ -1,0 +1,598 @@
+/* ────────────────────────────────────────────────────────────────────────────
+   components.css — Ova Vanilla
+   Composants réutilisables : boutons, cartes, formulaires, badges, pullquote
+   ──────────────────────────────────────────────────────────────────────────── */
+
+/* ══════════════════════════════════════════════════════════════════════════
+   BOUTONS
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    border-color var(--transition);
+}
+
+/* Primaire — fond vert forêt */
+.btn--primary {
+  background-color: var(--ink);
+  color: var(--cream);
+  border-color: var(--ink);
+}
+
+.btn--primary:hover {
+  background-color: var(--deep);
+  border-color: var(--deep);
+}
+
+/* Secondaire — contour crème (sur fond sombre) */
+.btn--secondary {
+  background-color: transparent;
+  color: var(--cream);
+  border-color: var(--cream-30);
+}
+
+.btn--secondary:hover {
+  background-color: var(--cream-15);
+  border-color: var(--cream);
+}
+
+/* Outline — contour vert forêt (sur fond clair) */
+.btn--outline {
+  background-color: transparent;
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.btn--outline:hover {
+  background-color: var(--ink);
+  color: var(--cream);
+}
+
+/* Or — CTA fort sur fond sombre */
+.btn--gold {
+  background-color: var(--gold);
+  color: var(--paper);
+  border-color: var(--gold);
+}
+
+.btn--gold:hover {
+  background-color: #a47b4b;
+  border-color: #a47b4b;
+}
+
+/* Nav — compact, utilisé dans la barre de navigation */
+.btn--nav {
+  background-color: var(--ink);
+  color: var(--cream);
+  border-color: var(--ink);
+  padding: 8px 20px;
+  font-size: 0.75rem;
+}
+
+.btn--nav:hover {
+  background-color: transparent;
+  color: var(--ink);
+}
+
+/* Taille large */
+.btn--lg {
+  padding: 18px 40px;
+  font-size: 0.875rem;
+}
+
+/* Lien flèche sans fond */
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  transition: gap var(--transition-fast);
+}
+
+.link-arrow:hover {
+  gap: 12px;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   CARTE GRADE PRODUIT — .grade-card
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.grade-card {
+  background-color: #fff;
+  border: 1px solid var(--gold-20);
+  transition:
+    box-shadow var(--transition),
+    border-color var(--transition),
+    transform var(--transition);
+}
+
+.grade-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--gold-40);
+  transform: translateY(-2px);
+}
+
+/* Image de la fiche */
+.grade-card__img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-color: var(--deep);
+  overflow: hidden;
+}
+
+.grade-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform var(--transition-slow);
+}
+
+.grade-card:hover .grade-card__img {
+  transform: scale(1.04);
+}
+
+/* Placeholder quand la photo est absente */
+.grade-card__img-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grade-card__img-placeholder svg {
+  width: 48px;
+  height: 48px;
+  opacity: 0.1;
+  stroke: var(--cream);
+}
+
+/* Corps de la fiche */
+.grade-card__body {
+  padding: var(--space-md);
+}
+
+.grade-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* Badge de grade */
+.grade-card__badge {
+  font-family: var(--font-sans);
+  font-size: 0.5625rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 3px 10px;
+  border-radius: var(--radius-sm);
+}
+
+/* Mention "Sur devis" */
+.grade-card__devis {
+  font-family: var(--font-sans);
+  font-size: 0.5625rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* Monogramme OV en bas droite */
+.grade-card__monogram {
+  position: absolute;
+  bottom: var(--space-xs);
+  right: var(--space-sm);
+  font-family: var(--font-serif);
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--cream);
+  opacity: 0.35;
+}
+
+.grade-card__name {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--deep);
+  margin-bottom: 8px;
+}
+
+.grade-card__desc {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.65;
+  color: var(--deep);
+  opacity: 0.7;
+  margin-bottom: var(--space-sm);
+}
+
+/* Grille de spécifications */
+.grade-card__specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--gold-20);
+  margin-bottom: var(--space-sm);
+}
+
+.spec__label {
+  font-family: var(--font-sans);
+  font-size: 0.5625rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--deep);
+  opacity: 0.45;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.spec__value {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--deep);
+}
+
+/* Lien "Voir le grade" */
+.grade-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink);
+  transition:
+    color var(--transition-fast),
+    gap var(--transition-fast);
+}
+
+.grade-card__link:hover {
+  color: var(--gold);
+  gap: 12px;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   PILIER — section La Maison
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.pillars {
+  border-top: 1px solid var(--gold-20);
+}
+
+.pillar {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: var(--space-sm);
+  align-items: flex-start;
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--gold-20);
+}
+
+.pillar__icon {
+  padding-top: 2px;
+}
+
+.pillar__icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--gold);
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pillar__title {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.pillar__desc {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.65;
+  color: var(--deep);
+  opacity: 0.7;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   PULLQUOTE
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.pullquote {
+  border-left: 2px solid var(--gold);
+  padding-left: var(--space-md);
+  margin: var(--space-lg) 0;
+}
+
+.pullquote__text {
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--cream);
+}
+
+.pullquote__cite {
+  display: block;
+  margin-top: 12px;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-style: normal;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   FORMULAIRES
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+/* Ligne à deux colonnes */
+.form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative; /* Pour le champ honeypot absolu */
+}
+
+.form__label {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--deep);
+  opacity: 0.65;
+}
+
+/* Label sur fond sombre */
+.form__label--light {
+  color: var(--cream);
+  opacity: 0.7;
+}
+
+/* Champs de saisie */
+.form__input,
+.form__select,
+.form__textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: transparent;
+  border: 1px solid var(--gold-20);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 300;
+  color: var(--deep);
+  transition: border-color var(--transition-fast);
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.form__input:focus,
+.form__select:focus,
+.form__textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: var(--deep);
+  opacity: 0.30;
+}
+
+.form__textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+/* Select avec flèche personnalisée */
+.form__select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%230F1A13' stroke-opacity='0.45' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+/* Variante sombre (formulaire sur fond vert forêt) */
+.form--dark .form__input,
+.form--dark .form__select,
+.form--dark .form__textarea {
+  border-color: var(--cream-15);
+  color: var(--cream);
+}
+
+.form--dark .form__input::placeholder,
+.form--dark .form__textarea::placeholder {
+  color: var(--cream);
+  opacity: 0.30;
+}
+
+.form--dark .form__input:focus,
+.form--dark .form__select:focus,
+.form--dark .form__textarea:focus {
+  border-color: var(--gold);
+}
+
+.form--dark .form__select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23F0E6D2' stroke-opacity='0.4' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+/* Champ honeypot anti-spam — invisible pour les humains */
+.form__honeypot {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  pointer-events: none;
+  tabindex: -1;
+}
+
+/* Message d'erreur inline */
+.form__error {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: #b94040;
+  display: none;
+}
+
+.form__error--visible { display: block; }
+
+/* Message de succès */
+.form__success {
+  display: none;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--ink-10);
+  border-left: 3px solid var(--ink);
+}
+
+.form__success--visible { display: block; }
+
+.form__success p {
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+/* Variante succès sur fond sombre */
+.form--dark .form__success {
+  background-color: var(--cream-15);
+  border-left-color: var(--gold);
+}
+
+.form--dark .form__success p { color: var(--cream); }
+
+.form__hint {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--deep);
+  opacity: 0.45;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   ANIMATIONS AU SCROLL — IntersectionObserver
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* État initial : invisible, décalé vers le bas */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity var(--transition-slow),
+    transform var(--transition-slow);
+}
+
+/* État visible : déclenché par IntersectionObserver */
+.fade-up--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Délais échelonnés pour les groupes */
+.fade-up--d1 { transition-delay: 80ms; }
+.fade-up--d2 { transition-delay: 160ms; }
+.fade-up--d3 { transition-delay: 240ms; }
+.fade-up--d4 { transition-delay: 320ms; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   UTILITAIRES
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* Accessibilité — masquer visuellement mais garder pour les lecteurs d'écran */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Diviseur doré */
+.divider {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: var(--gold);
+  margin: var(--space-sm) 0;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   RESPONSIVE — composants
+   ══════════════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .form__row {
+    grid-template-columns: 1fr;
+  }
+
+  .grade-card__specs {
+    grid-template-columns: 1fr;
+  }
+
+  .pullquote {
+    padding-left: var(--space-sm);
+    margin: var(--space-md) 0;
+  }
+}

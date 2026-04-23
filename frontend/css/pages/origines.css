@@ -1,0 +1,314 @@
+/* ────────────────────────────────────────────────────────────────────────────
+   pages/origines.css — Ova Vanilla
+   ──────────────────────────────────────────────────────────────────────────── */
+
+/* ── Hero ── */
+.page-hero {
+  position: relative;
+  background-color: var(--deep);
+  color: var(--cream);
+  padding: calc(var(--space-section) + var(--nav-height)) 0 var(--space-section);
+  overflow: hidden;
+}
+
+.page-hero__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.page-hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.28;
+  filter: contrast(1.15) brightness(0.9);
+}
+
+.page-hero__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, var(--deep) 30%, rgba(15,26,19,0.55) 100%);
+}
+
+.page-hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero__eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.page-hero__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  color: var(--cream);
+  margin: 0 0 20px;
+}
+
+.page-hero__subtitle {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--cream);
+  opacity: 0.7;
+  max-width: 52ch;
+  line-height: 1.75;
+}
+
+/* ── Territoire split ── */
+.origines-territoire {
+  padding: var(--space-section) 0;
+}
+
+.origines-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.origines-split__text .section__label {
+  margin-bottom: 12px;
+}
+
+.origines-split__text .t-body {
+  margin-bottom: 16px;
+  opacity: 0.85;
+  line-height: 1.8;
+}
+
+.origines-split__text .t-body:last-child {
+  margin-bottom: 0;
+}
+
+.origines-photo-frame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  background-color: var(--deep);
+  overflow: hidden;
+}
+
+.origines-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.origines-photo-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 16px;
+  background: linear-gradient(to top, rgba(15,26,19,0.8), transparent);
+}
+
+.origines-photo-caption span {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cream);
+  opacity: 0.7;
+}
+
+/* ── Intro texte centré ── */
+.origines-intro {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto var(--space-lg);
+}
+
+.origines-intro .section__title {
+  margin-bottom: 20px;
+}
+
+.origines-intro__text {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--deep);
+  opacity: 0.75;
+  line-height: 1.8;
+}
+
+/* ── Étapes botanique ── */
+.origines-botanique {
+  padding: var(--space-section) 0;
+}
+
+.origines-etapes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.origines-etape {
+  padding: var(--space-sm);
+  border: 1px solid var(--gold-20);
+  background-color: var(--paper);
+}
+
+.origines-etape__num {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--gold);
+  opacity: 0.6;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.origines-etape__titre {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 10px;
+  letter-spacing: 0.02em;
+}
+
+.origines-etape__texte {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--deep);
+  opacity: 0.8;
+  line-height: 1.7;
+}
+
+/* ── Pullquote pleine largeur ── */
+.origines-pullquote {
+  position: relative;
+  padding: calc(var(--space-section) * 1.5) 0;
+  overflow: hidden;
+}
+
+.origines-pullquote__bg {
+  position: absolute;
+  inset: 0;
+  background-color: var(--deep);
+}
+
+.origines-pullquote__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  filter: contrast(1.2);
+}
+
+.origines-pullquote__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(15,26,19,0.7);
+}
+
+.origines-pullquote__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.origines-pullquote__texte {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--cream);
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.origines-pullquote__attribution {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ── Traçabilité ── */
+.origines-tracabilite {
+  padding: var(--space-section) 0;
+}
+
+.origines-tracabilite__grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.tracabilite-etape {
+  text-align: center;
+  padding: var(--space-sm);
+}
+
+.tracabilite-etape__icone {
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--gold-20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.tracabilite-etape__titre {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 10px;
+  letter-spacing: 0.02em;
+}
+
+.tracabilite-etape__texte {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--deep);
+  opacity: 0.8;
+  line-height: 1.7;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .origines-split {
+    grid-template-columns: 1fr;
+  }
+
+  .origines-etapes {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .origines-tracabilite__grille {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .origines-etapes {
+    grid-template-columns: 1fr;
+  }
+}
