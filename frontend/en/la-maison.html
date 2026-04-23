@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>La Maison — Ova Vanilla, Négoce de Vanille Gourmet</title>
-  <meta name="description" content="Ova Vanilla est une maison de négoce française spécialisée dans l'import direct de vanille Gourmet de Madagascar. Découvrez notre histoire, nos engagements et notre vision du commerce équitable.">
+  <title>The House — Ova Vanilla, Gourmet Vanilla Trading</title>
+  <meta name="description" content="Ova Vanilla is a French trading house specialising in direct import of Gourmet vanilla from Madagascar. Discover our story, commitments and vision of fair trade.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://ovavanilla.fr/la-maison">
+  <link rel="canonical" href="https://ovavanilla.fr/en/la-maison">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="fr" href="https://ovavanilla.fr/la-maison">
+  <link rel="alternate" hreflang="en" href="https://ovavanilla.fr/en/la-maison">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="La Maison — Ova Vanilla">
-  <meta property="og:description" content="Une maison de négoce française engagée dans l'import direct de vanille Gourmet de Madagascar.">
+  <meta property="og:title" content="The House — Ova Vanilla">
+  <meta property="og:description" content="A French trading house committed to direct import of Gourmet vanilla from Madagascar.">
   <meta property="og:image" content="https://ovavanilla.fr/assets/og-image.jpg">
-  <meta property="og:url" content="https://ovavanilla.fr/la-maison">
-  <meta property="og:locale" content="fr_FR">
+  <meta property="og:url" content="https://ovavanilla.fr/en/la-maison">
+  <meta property="og:locale" content="en_GB">
   <meta property="og:site_name" content="Ova Vanilla">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
-  <link rel="alternate icon" href="./assets/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="alternate icon" href="../assets/favicon.ico">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,12 +32,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/variables.css">
-  <link rel="stylesheet" href="./css/typography.css">
-  <link rel="stylesheet" href="./css/layout.css">
-  <link rel="stylesheet" href="./css/components.css">
-  <link rel="stylesheet" href="./css/pages/la-maison.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages/la-maison.css">
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -59,108 +63,108 @@
 <header class="nav" id="nav" role="banner">
 
   <!-- Logo -->
-  <a href="./" class="nav__logo" aria-label="Ova Vanilla — Accueil">
-    <img src="./assets/logo.png" alt="Ova Vanilla — Vanille Gourmet de Madagascar" width="53" height="40" loading="eager">
+  <a href="../" class="nav__logo" aria-label="Ova Vanilla — Home">
+    <img src="../assets/logo.png" alt="Ova Vanilla — Gourmet Vanilla from Madagascar" width="53" height="40" loading="eager">
   </a>
 
-  <!-- Liens principaux -->
-  <nav class="nav__links" aria-label="Navigation principale">
-    <a href="./la-maison"      class="nav__link">La Maison</a>
-    <a href="./nos-vanilles"   class="nav__link">Nos Vanilles</a>
-    <a href="./origines"       class="nav__link">Origines</a>
-    <a href="./professionnels" class="nav__link">Professionnels</a>
+  <!-- Main links -->
+  <nav class="nav__links" aria-label="Main navigation">
+    <a href="./la-maison"      class="nav__link nav__link--active">The House</a>
+    <a href="./nos-vanilles"   class="nav__link">Our Vanillas</a>
+    <a href="./origines"       class="nav__link">Origins</a>
+    <a href="./professionnels" class="nav__link">Trade</a>
     <a href="./contact"        class="nav__link">Contact</a>
   </nav>
 
-  <!-- Zone droite -->
+  <!-- Right zone -->
   <div class="nav__right">
-    <a href="./professionnels#devis" class="nav__cta">Demander un devis ↗</a>
-    <div class="nav__lang-switcher" role="navigation" aria-label="Langue">
-      <a href="./" class="nav__lang-link nav__lang-link--active" lang="fr" hreflang="fr">FR</a>
+    <a href="./professionnels#devis" class="nav__cta">Request a quote ↗</a>
+    <div class="nav__lang-switcher" role="navigation" aria-label="Language">
+      <a href="../la-maison" class="nav__lang-link" lang="fr" hreflang="fr">FR</a>
       <span class="nav__lang-sep" aria-hidden="true">/</span>
-      <a href="./en/la-maison" class="nav__lang-link" lang="en" hreflang="en">EN</a>
+      <a href="./la-maison" class="nav__lang-link nav__lang-link--active" lang="en" hreflang="en">EN</a>
     </div>
     <button class="nav__burger" id="nav-burger"
-            aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-mobile">
+            aria-label="Open menu" aria-expanded="false" aria-controls="nav-mobile">
       <span></span><span></span><span></span>
     </button>
   </div>
 
 </header>
 
-<!-- Menu mobile -->
-<div class="nav__mobile" id="nav-mobile" role="dialog" aria-modal="true" aria-label="Menu de navigation">
-  <nav class="nav__mobile-links" aria-label="Navigation mobile">
-    <a href="./la-maison"      class="nav__mobile-link">La Maison</a>
-    <a href="./nos-vanilles"   class="nav__mobile-link">Nos Vanilles</a>
-    <a href="./origines"       class="nav__mobile-link">Origines</a>
-    <a href="./professionnels" class="nav__mobile-link">Professionnels</a>
+<!-- Mobile menu -->
+<div class="nav__mobile" id="nav-mobile" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <nav class="nav__mobile-links" aria-label="Mobile navigation">
+    <a href="./la-maison"      class="nav__mobile-link">The House</a>
+    <a href="./nos-vanilles"   class="nav__mobile-link">Our Vanillas</a>
+    <a href="./origines"       class="nav__mobile-link">Origins</a>
+    <a href="./professionnels" class="nav__mobile-link">Trade</a>
     <a href="./contact"        class="nav__mobile-link">Contact</a>
   </nav>
-  <a href="./professionnels#devis" class="nav__mobile-cta">Demander un devis ↗</a>
+  <a href="./professionnels#devis" class="nav__mobile-cta">Request a quote ↗</a>
   <div class="nav__mobile-lang">
-    <a href="./" class="nav__lang-link nav__lang-link--active" lang="fr" hreflang="fr">FR</a>
+    <a href="../la-maison" class="nav__lang-link" lang="fr" hreflang="fr">FR</a>
     <span class="nav__lang-sep" aria-hidden="true">/</span>
-    <a href="./en/la-maison" class="nav__lang-link" lang="en" hreflang="en">EN</a>
+    <a href="./la-maison" class="nav__lang-link nav__lang-link--active" lang="en" hreflang="en">EN</a>
   </div>
 </div>
 
 
 <!-- HERO PAGE -->
-<section class="page-hero" aria-label="La Maison Ova Vanilla">
+<section class="page-hero" aria-label="The House — Ova Vanilla">
   <div class="page-hero__bg" aria-hidden="true">
-    <img src="./assets/photos/marseille-port.jpg"
-         alt="Entrepôt Ova Vanilla — stockage vanille Gourmet"
+    <img src="../assets/photos/marseille-port.jpg"
+         alt="Ova Vanilla warehouse — Gourmet vanilla storage"
          loading="eager" fetchpriority="high">
   </div>
   <div class="container">
     <div class="page-hero__content">
-      <p class="page-hero__eyebrow">Maison de négoce française — Fondée 2023</p>
+      <p class="page-hero__eyebrow">French trading house — Founded 2023</p>
       <h1 class="page-hero__title">
-        Une maison<br>
-        <em>de négoce.</em>
+        A trading<br>
+        <em>house.</em>
       </h1>
       <p class="page-hero__subtitle">
-        Ova Vanilla est une maison de négoce française spécialisée dans l'import direct
-        de vanille Gourmet depuis les coopératives de la Sava, à Madagascar.
+        Ova Vanilla is a French trading house specialising in direct import
+        of Gourmet vanilla from cooperatives in the Sava region of Madagascar.
       </p>
     </div>
   </div>
 </section>
 
 
-<!-- SECTION 1 — HISTOIRE -->
+<!-- SECTION 1 — HISTORY -->
 <section class="section section--paper maison-histoire" aria-labelledby="histoire-titre">
   <div class="container">
     <div class="maison-split">
 
       <div class="maison-split__visual fade-up">
         <div class="maison-photo-frame">
-          <img src="./assets/section%20notre%20histoire%20page%20la%20maison.png"
-               alt="Ova Vanilla — Maison de négoce, Marseille"
+          <img src="../assets/section%20notre%20histoire%20page%20la%20maison.png"
+               alt="Ova Vanilla — Trading house, Marseille"
                loading="lazy">
         </div>
       </div>
 
       <div class="maison-split__text fade-up fade-up--d1">
-        <span class="section__label">Notre histoire</span>
+        <span class="section__label">Our story</span>
         <h2 class="section__title" id="histoire-titre">
-          Du producteur<br>au professionnel.
+          From grower<br>to professional.
         </h2>
         <p class="t-body">
-          Ova Vanilla naît d'un constat simple : la chaîne d'approvisionnement
-          de la vanille est trop longue. Entre le producteur malgache et le pâtissier
-          français, il existe parfois quatre à cinq intermédiaires, chacun prélevant
-          une marge qui érode la qualité finale et la juste rémunération du producteur.
+          Ova Vanilla was born from a simple observation: the vanilla supply chain
+          is far too long. Between the Malagasy grower and the French pastry chef,
+          there are sometimes four or five intermediaries, each taking a margin
+          that erodes final quality and fair remuneration for the producer.
         </p>
         <p class="t-body">
-          Nous avons choisi l'approche directe. Des partenariats avec les coopératives
-          de Sambava, un contrôle qualité réalisé sur place avant embarquement,
-          et un stock permanent permettant des délais de livraison sous cinq jours.
+          We chose the direct approach. Partnerships with cooperatives in Sambava,
+          quality control carried out on site before shipment,
+          and a permanent stock enabling delivery within five working days.
         </p>
         <p class="t-body">
-          Le nom Ova — « œuf » en malgache — évoque la gousse avant floraison,
-          la promesse d'un arôme encore enfermé.
+          The name Ova — meaning "egg" in Malagasy — evokes the pod before flowering,
+          the promise of an aroma still locked inside.
         </p>
       </div>
 
@@ -169,14 +173,14 @@
 </section>
 
 
-<!-- SECTION 2 — VALEURS -->
+<!-- SECTION 2 — VALUES -->
 <section class="section section--cream maison-valeurs" aria-labelledby="valeurs-titre">
   <div class="container">
 
     <div class="maison-valeurs__header fade-up">
-      <span class="section__label">Nos engagements</span>
+      <span class="section__label">Our commitments</span>
       <h2 class="section__title" id="valeurs-titre">
-        Ce qui nous<br>distingue.
+        What sets<br>us apart.
       </h2>
     </div>
 
@@ -190,10 +194,10 @@
             <circle cx="12" cy="9" r="2.5"/>
           </svg>
         </div>
-        <h3 class="maison-valeur__titre">Import direct</h3>
+        <h3 class="maison-valeur__titre">Direct import</h3>
         <p class="maison-valeur__texte">
-          Aucun intermédiaire entre la coopérative malgache et notre entrepôt.
-          La qualité est préservée, le prix est juste pour le producteur.
+          No intermediary between the Malagasy cooperative and our warehouse.
+          Quality is preserved; the price is fair for the producer.
         </p>
       </div>
 
@@ -205,10 +209,10 @@
             <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>
           </svg>
         </div>
-        <h3 class="maison-valeur__titre">Traçabilité totale</h3>
+        <h3 class="maison-valeur__titre">Full traceability</h3>
         <p class="maison-valeur__texte">
-          Chaque lot porte un numéro de référence (ex. SV-254) lié à une récolte,
-          une zone géographique et une date de contrôle qualité précise.
+          Every lot carries a reference number (e.g. SV-254) linked to a harvest,
+          a geographic zone and a precise quality control date.
         </p>
       </div>
 
@@ -219,10 +223,10 @@
             <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10"/>
           </svg>
         </div>
-        <h3 class="maison-valeur__titre">Stock permanent</h3>
+        <h3 class="maison-valeur__titre">Permanent stock</h3>
         <p class="maison-valeur__texte">
-          Contrairement à la saisonnalité de nombreux négoces, nous maintenons
-          un stock permanent. Livraison sous 5 jours ouvrés en France et à l'international.
+          Unlike many trading houses bound by seasonality, we maintain
+          a permanent stock. Delivery within 5 working days across France and internationally.
         </p>
       </div>
 
@@ -234,10 +238,10 @@
             <path d="M12 8v4l3 3"/>
           </svg>
         </div>
-        <h3 class="maison-valeur__titre">Réactivité B2B</h3>
+        <h3 class="maison-valeur__titre">B2B responsiveness</h3>
         <p class="maison-valeur__texte">
-          Devis sous 24 heures. Commandes à partir de 500 g.
-          Tarifs dégressifs selon le volume. Interlocuteur dédié pour les comptes réguliers.
+          Quotes within 24 hours. Orders from 500 g.
+          Volume-based pricing. Dedicated contact for regular accounts.
         </p>
       </div>
 
@@ -249,10 +253,10 @@
             <polyline points="9 22 9 12 15 12 15 22"/>
           </svg>
         </div>
-        <h3 class="maison-valeur__titre">Livraison internationale</h3>
+        <h3 class="maison-valeur__titre">International delivery</h3>
         <p class="maison-valeur__texte">
-          Nous livrons en France, en Europe, aux États-Unis et au Canada.
-          Conditionnements professionnels, traçabilité lot à lot, bon de contrôle joint à chaque expédition.
+          We ship to France, Europe, the United States and Canada.
+          Professional packaging, lot-by-lot traceability, quality certificate included with every shipment.
         </p>
       </div>
 
@@ -266,10 +270,10 @@
             <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
           </svg>
         </div>
-        <h3 class="maison-valeur__titre">Partenariat durable</h3>
+        <h3 class="maison-valeur__titre">Long-term partnership</h3>
         <p class="maison-valeur__texte">
-          Nos relations avec les coopératives de la Sava reposent sur des contrats
-          pluriannuels. Sécurité pour le producteur, régularité pour nos clients professionnels.
+          Our relationships with Sava cooperatives are built on multi-year contracts.
+          Security for the producer, consistency for our professional clients.
         </p>
       </div>
 
@@ -278,11 +282,11 @@
 </section>
 
 
-<!-- SECTION 3 — CHIFFRES -->
-<section class="maison-chiffres" aria-label="Ova Vanilla en chiffres">
+<!-- SECTION 3 — KEY FIGURES -->
+<section class="maison-chiffres" aria-label="Ova Vanilla in figures">
   <div class="maison-chiffres__bg" aria-hidden="true">
-    <img src="./assets/photos/gousses-detail.jpg"
-         alt="Détail gousses de vanille noire"
+    <img src="../assets/photos/gousses-detail.jpg"
+         alt="Detail — black vanilla pods"
          loading="lazy"
          onerror="this.style.display='none'">
   </div>
@@ -291,28 +295,28 @@
 
       <div class="maison-chiffre fade-up">
         <span class="maison-chiffre__val">2025</span>
-        <span class="maison-chiffre__label">Récolte en cours</span>
+        <span class="maison-chiffre__label">Current harvest</span>
       </div>
 
       <div class="maison-chiffre__sep" aria-hidden="true"></div>
 
       <div class="maison-chiffre fade-up fade-up--d1">
         <span class="maison-chiffre__val">16 — 18 cm</span>
-        <span class="maison-chiffre__label">Calibre Grade Gourmet</span>
+        <span class="maison-chiffre__label">Gourmet grade calibre</span>
       </div>
 
       <div class="maison-chiffre__sep" aria-hidden="true"></div>
 
       <div class="maison-chiffre fade-up fade-up--d2">
-        <span class="maison-chiffre__val">J + 5</span>
-        <span class="maison-chiffre__label">Délai de livraison</span>
+        <span class="maison-chiffre__val">D + 5</span>
+        <span class="maison-chiffre__label">Delivery lead time</span>
       </div>
 
       <div class="maison-chiffre__sep" aria-hidden="true"></div>
 
       <div class="maison-chiffre fade-up fade-up--d3">
         <span class="maison-chiffre__val">500 g</span>
-        <span class="maison-chiffre__label">Commande minimum</span>
+        <span class="maison-chiffre__label">Minimum order</span>
       </div>
 
     </div>
@@ -321,23 +325,23 @@
 
 
 <!-- SECTION 4 — CTA -->
-<section class="section section--paper maison-cta-section" aria-label="Prendre contact">
+<section class="section section--paper maison-cta-section" aria-label="Get in touch">
   <div class="container">
     <div class="maison-cta fade-up">
       <h2 class="maison-cta__title">
-        Vous cherchez un fournisseur<br>
-        <em>de confiance&nbsp;?</em>
+        Looking for a supplier<br>
+        <em>you can rely on&nbsp;?</em>
       </h2>
       <p class="maison-cta__text">
-        Commencez par un échantillon gratuit. Nous vous envoyons 10 g de Gourmet
-        pour que vous puissiez évaluer la qualité avant toute commande.
+        Start with a free sample. We send 10 g of Gourmet vanilla
+        so you can assess the quality before placing any order.
       </p>
       <div class="maison-cta__btns">
         <a href="./professionnels#echantillon" class="btn btn--primary btn--lg">
-          Demander un échantillon
+          Request a sample
         </a>
         <a href="./nos-vanilles" class="btn btn--outline">
-          Voir la gamme →
+          View the range →
         </a>
       </div>
     </div>
@@ -350,8 +354,8 @@
   <div class="container">
     <div class="footer__inner">
       <div>
-        <img src="./assets/logo-white.png" alt="Ova Vanilla — Vanille Gourmet de Madagascar" class="footer__brand-logo" width="51" height="38">
-        <p class="footer__tagline">De la Sava aux maisons de bouche.</p>
+        <img src="../assets/logo-white.png" alt="Ova Vanilla — Gourmet Vanilla from Madagascar" class="footer__brand-logo" width="51" height="38">
+        <p class="footer__tagline">From the Sava to your kitchen.</p>
         <div class="footer__social">
           <a href="https://www.instagram.com/ovavanilla"
              target="_blank" rel="noopener noreferrer"
@@ -367,26 +371,26 @@
       </div>
       <div>
         <p class="footer__col-title">Navigation</p>
-        <nav class="footer__nav" aria-label="Navigation pied de page">
-          <a href="./la-maison"      class="footer__nav-link">La Maison</a>
-          <a href="./nos-vanilles"   class="footer__nav-link">Nos Vanilles</a>
-          <a href="./origines"        class="footer__nav-link">Origines</a>
-          <a href="./professionnels" class="footer__nav-link">Professionnels</a>
-          <a href="./contact"         class="footer__nav-link">Contact</a>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="./la-maison"      class="footer__nav-link">The House</a>
+          <a href="./nos-vanilles"   class="footer__nav-link">Our Vanillas</a>
+          <a href="./origines"       class="footer__nav-link">Origins</a>
+          <a href="./professionnels" class="footer__nav-link">Trade</a>
+          <a href="./contact"        class="footer__nav-link">Contact</a>
         </nav>
       </div>
       <div>
-        <p class="footer__col-title">La Gamme</p>
-        <nav class="footer__nav" aria-label="Gamme produits">
+        <p class="footer__col-title">The Range</p>
+        <nav class="footer__nav" aria-label="Product range">
           <a href="./nos-vanilles#gourmet" class="footer__nav-link">Gourmet</a>
-          <a href="./nos-vanilles#caviar"  class="footer__nav-link">Caviar de Vanille</a>
-          <a href="./nos-vanilles#poudre"  class="footer__nav-link">Poudre de Vanille</a>
+          <a href="./nos-vanilles#caviar"  class="footer__nav-link">Vanilla Caviar</a>
+          <a href="./nos-vanilles#poudre"  class="footer__nav-link">Vanilla Powder</a>
         </nav>
       </div>
       <div>
         <p class="footer__col-title">Contact</p>
         <div class="footer__contact-row">
-          <span class="footer__contact-label">Téléphone</span>
+          <span class="footer__contact-label">Phone</span>
           <span class="footer__contact-value">[TELEPHONE]</span>
         </div>
         <div class="footer__contact-row">
@@ -396,10 +400,10 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copy">© 2025 Ova Vanilla — Tous droits réservés</p>
+      <p class="footer__copy">© 2025 Ova Vanilla — All rights reserved</p>
       <div class="footer__legal-links">
-        <a href="./mentions-legales" class="footer__legal-link">Mentions légales</a>
-        <a href="./mentions-legales#confidentialite" class="footer__legal-link">Politique de confidentialité</a>
+        <a href="./mentions-legales" class="footer__legal-link">Legal Notice</a>
+        <a href="./mentions-legales#confidentialite" class="footer__legal-link">Privacy Policy</a>
       </div>
     </div>
   </div>
@@ -407,8 +411,8 @@
 
 
 <!-- SCRIPTS -->
-<script src="./js/lang.js"></script>
-<script src="./js/main.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/main.js"></script>
 
 </body>
 </html>
