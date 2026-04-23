@@ -39,40 +39,18 @@
 .nav__logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  flex-shrink: 0;
   text-decoration: none;
-  flex-shrink: 0;
-  color: var(--ink);
 }
 
-.nav__logo-icon {
-  width: 26px;
-  height: 38px;
-  flex-shrink: 0;
+.nav__logo img {
+  height: 40px;
+  width: auto;
+  transition: opacity var(--transition-fast);
 }
 
-.nav__logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-}
-
-.nav__logo-ova {
-  font-family: var(--font-serif);
-  font-size: 22px;
-  font-weight: 400;
-  color: var(--ink);
-  line-height: 1.1;
-}
-
-.nav__logo-vanilla {
-  font-family: var(--font-sans);
-  font-size: 9px;
-  font-weight: 300;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--ink);
-  margin-top: 2px;
+.nav__logo:hover img {
+  opacity: 0.75;
 }
 
 /* ─── Liens ────────────────────────────────────────────────────────────── */
