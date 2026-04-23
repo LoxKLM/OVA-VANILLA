@@ -1,8 +1,8 @@
 {
   "grades": [
     {
-      "id": "tk-noire",
-      "nom": "Gourmet TK Noire",
+      "id": "gourmet",
+      "nom": "Gourmet",
       "badge": "Grade A — Gourmet",
       "categorie": "gousse",
       "description": "Le standard du négoce fin. Souple, noire, charnue — la référence pour la pâtisserie et la chocolaterie haute exigence.",
@@ -10,26 +10,10 @@
       "espece": "Vanilla planifolia",
       "recolte": "2025",
       "lot": "SV-254",
-      "calibre": "17 cm",
+      "calibre": "16 — 18 cm",
       "humidite": "30 — 35 % H₂O",
       "formats": ["100 g", "500 g", "1 kg", "Vrac professionnel"],
-      "photo": "grade-tk-noire.jpg",
-      "disponible": true
-    },
-    {
-      "id": "split",
-      "nom": "Split Gourmet",
-      "badge": "Grade B — Premium",
-      "categorie": "gousse",
-      "description": "Gousses fendues naturellement — extrêmement riches en vanilline. Idéales pour les infusions, préparations à froid et productions en volume.",
-      "origine": "Sambava · Madagascar",
-      "espece": "Vanilla planifolia",
-      "recolte": "2025",
-      "lot": "À renseigner",
-      "calibre": "14 — 16 cm",
-      "humidite": "25 — 30 % H₂O",
-      "formats": ["500 g", "1 kg", "Vrac professionnel"],
-      "photo": "grade-split.jpg",
+      "photo": "gousses-vanille-noire-gourmet-madagascar-macro.png",
       "disponible": true
     },
     {
@@ -46,29 +30,28 @@
       "conditionnement": "Boîtes hermétiques",
       "formats": ["100 g", "250 g", "500 g", "1 kg"],
       "additifs": "Aucun",
-      "photo": "grade-poudre.jpg",
+      "photo": "",
       "disponible": true
     },
     {
-      "id": "extrait",
-      "nom": "Extrait Naturel de Vanille",
-      "badge": "Double fold",
-      "categorie": "extrait",
-      "description": "Extraction à froid sur alcool neutre. Concentration double fold, 200 g/L. Stabilité aromatique garantie. Sans colorant, sans exhausteur.",
-      "origine": "Région Sava · Madagascar",
+      "id": "caviar",
+      "nom": "Caviar de Vanille",
+      "badge": "Pur caviar",
+      "categorie": "caviar",
+      "description": "Graines extraites à la main depuis les gousses Gourmet. Concentration aromatique maximale, teneur en vanilline exceptionnelle. Usage direct en pâtisserie fine et chocolaterie.",
+      "origine": "Sambava · Madagascar",
       "espece": "Vanilla planifolia",
       "recolte": "2025",
-      "methode": "Extraction à froid",
-      "concentration": "200 g/L (double fold)",
-      "alcool": "Alcool neutre",
-      "formats": ["500 ml", "1 L", "5 L"],
+      "conditionnement": "Pots hermétiques",
+      "formats": ["10 g", "30 g", "100 g"],
       "additifs": "Aucun",
-      "photo": "grade-extrait.jpg",
-      "disponible": false
+      "photo": "",
+      "disponible": true
     }
   ],
   "meta": {
     "derniere_mise_a_jour": "2025",
-    "contact_devis": "[EMAIL_PRO]"
+    "contact_devis": "[EMAIL_PRO]",
+    "livraison": "France, Europe, États-Unis, Canada"
   }
 }

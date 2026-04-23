@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(sed -i 's|href=\"\\\\.\\\\./index\\\\.html\"|href=\"../\"|g' en/index.html)",
-      "Bash(sed -i 's|href=\"\\\\.\\\\./\\\\\\([a-z-]*\\\\\\)\\\\.html|href=\"../\\\\1|g' en/index.html)"
+      "Bash(sed -i 's|href=\"\\\\.\\\\./\\\\\\([a-z-]*\\\\\\)\\\\.html|href=\"../\\\\1|g' en/index.html)",
+      "Bash(node -e ' *)"
     ]
   }
 }

@@ -16,51 +16,60 @@ Toutes les photos Ova Vanilla doivent respecter les critères suivants :
   • Jamais de mains tenant des épices, de marchés colorés, de registre touristique
 
 
-FICHIERS ATTENDUS
-─────────────────
+FICHIERS INTÉGRÉS (déjà livrés et placés)
+──────────────────────────────────────────
 
-[ hero-gousses.jpg ]
-  Usage    : Hero plein écran homepage
-  Sujet    : Gousses de vanille noires disposées verticalement
-  Fond     : Noir profond ou brun sombre
-  Format   : Paysage — min. 2000 × 1200 px
-  Note     : Image principale du site — doit être impactante
+[ gousses-vanille-noire-gourmet-madagascar-macro.png ]
+  Usage    : Hero homepage (poster vidéo) + fiche produit Gourmet
+  Sujet    : Gousses de vanille noires en gros plan — macro
+
+[ selection-gousses-vanille-noire-sava-madagascar.png ]
+  Usage    : Section Origines homepage
+  Sujet    : Sélection manuelle des gousses — coopérative Sava
+
+[ lot-vanille-gourmet-conditionnement-export-madagascar.png ]
+  Usage    : Section La Maison homepage
+  Sujet    : Lot conditionné pour export
+
+[ bouquets-vanille-noire-gourmet-ova-vanilla.png ]
+  Usage    : Réserve éditoriale — pages intérieures
+  Sujet    : Bouquets de gousses liées
+
+[ header-vanille-ova-vanilla-madagascar.mp4 ] (dans /assets/videos/)
+  Usage    : Vidéo de fond hero homepage
+  Sujet    : Gousses ou plantation — ambiance
+
+FICHIERS ATTENDUS (photos manquantes)
+──────────────────────────────────────
 
 [ sava-landscape.jpg ]
   Usage    : Section Origines homepage + page origines.html
   Sujet    : Paysage de la région Sava (forêt, vallée, ou plantation)
-  Fond     : Naturel, pas de surexposition
   Format   : Portrait préféré — min. 1200 × 1600 px
-  Note     : Peut être une photo de végétation dense, rivière, brume matinale
 
 [ cooperatives.jpg ]
   Usage    : Page origines.html — section coopératives
   Sujet    : Producteurs au travail, plants de vanille, séchage
   Format   : Paysage ou portrait — min. 1400 × 900 px
 
-[ marseille-entrepot.jpg ]
+[ entrepot-ova-vanilla.jpg ]
   Usage    : Section La Maison homepage + page la-maison.html
-  Sujet    : Entrepôt, port de Marseille, ou conditionnement des lots
+  Sujet    : Entrepôt ou conditionnement des lots
   Format   : Portrait préféré — min. 1200 × 1600 px
 
-[ grade-tk-noire.jpg ]
-  Usage    : Fiche produit — Gourmet TK Noire
-  Sujet    : Gousses noires TK en gros plan, fond sombre
+[ grade-gourmet.jpg ]
+  Usage    : Fiche produit — Gourmet (gousses noires)
+  Sujet    : Gousses noires en gros plan, fond sombre
   Format   : Paysage 4:3 — min. 1200 × 900 px
 
-[ grade-split.jpg ]
-  Usage    : Fiche produit — Split Gourmet
-  Sujet    : Gousses split en gros plan, fond sombre
+[ grade-caviar.jpg ]
+  Usage    : Fiche produit — Caviar de Vanille
+  Sujet    : Pot de caviar de vanille, graines visibles, fond sombre
   Format   : Paysage 4:3 — min. 1200 × 900 px
 
 [ grade-poudre.jpg ]
   Usage    : Fiche produit — Poudre de Vanille
   Sujet    : Poudre de vanille, cuillère, fond sombre texturé
-  Format   : Paysage 4:3 — min. 1200 × 900 px
-
-[ grade-extrait.jpg ]
-  Usage    : Fiche produit — Extrait Naturel
-  Sujet    : Flacon d'extrait, gousses en arrière-plan, fond sombre
   Format   : Paysage 4:3 — min. 1200 × 900 px
 
 [ hero-gamme.jpg ]
@@ -75,17 +84,13 @@ FICHIERS ATTENDUS
 
 [ hero-maison.jpg ]
   Usage    : En-tête page la-maison.html
-  Sujet    : Marseille ou entrepôt/négoce
+  Sujet    : Entrepôt ou négoce — ambiance sobre
   Format   : Paysage — min. 2000 × 900 px
 
 [ og-image.jpg ]  ← dans /assets/ (pas /assets/photos/)
   Usage    : Open Graph — partage réseaux sociaux
   Sujet    : Logo ou gousses sur fond crème/sombre
   Format   : 1200 × 630 px (16:8.4 environ)
-
-[ insta-1.jpg à insta-6.jpg ] — OPTIONNELS
-  Usage    : Grille Instagram simulée (si remplacement des mockups CSS)
-  Format   : Carré — 800 × 800 px minimum
 
 
 NOTES TECHNIQUES
@@ -97,5 +102,5 @@ NOTES TECHNIQUES
     s'affiche sans erreur visible
 
 ══════════════════════════════════════════════════════════
-AM Talents — Développement web · Marseille
+AM Talents — Développement web
 ══════════════════════════════════════════════════════════

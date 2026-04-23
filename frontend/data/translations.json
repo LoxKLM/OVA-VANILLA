@@ -9,9 +9,9 @@
       "cta_devis": "Demander un devis ↗"
     },
     "hero": {
-      "label": "Maison de Négoce — Marseille · Sambava",
+      "label": "Maison de Négoce — France · Sambava",
       "titre": "La vanille Gourmet de Madagascar.",
-      "tagline": "Récolte 2025 — gousses noires, extraits et poudres pour boulangers, pâtissiers et restaurateurs. Sélection directe auprès des coopératives de la Sava, contrôle à l'arrivée à Marseille.",
+      "tagline": "Récolte 2025 — gousses noires, caviar et poudres pour boulangers, pâtissiers et restaurateurs. Sélection directe auprès des coopératives de la Sava, contrôle qualité à réception. Livraison France, Europe, États-Unis et Canada.",
       "cta_primaire": "Demander un échantillon",
       "cta_secondaire": "Voir les grades →"
     },
@@ -25,7 +25,7 @@
     "origines": {
       "label": "La Source",
       "titre": "De la Sava aux maisons de bouche.",
-      "texte": "Depuis Marseille, Ova Vanilla approvisionne boulangers, pâtissiers et restaurateurs en gousses et extraits sélectionnés auprès des coopératives de la Sava. Des lots tracés, des grades lisibles, une exigence de fraîcheur qui ne transige pas.",
+      "texte": "Ova Vanilla approvisionne boulangers, pâtissiers et restaurateurs en gousses et extraits sélectionnés auprès des coopératives de la Sava. Des lots tracés, des grades lisibles, une exigence de fraîcheur qui ne transige pas.",
       "cta": "Découvrir les origines"
     },
     "maison": {
@@ -56,9 +56,9 @@
       "cta_devis": "[PLACEHOLDER_EN — Request a quote ↗]"
     },
     "hero": {
-      "label": "[PLACEHOLDER_EN — Trading House — Marseille · Sambava]",
+      "label": "[PLACEHOLDER_EN — Trading House — France · Sambava]",
       "titre": "[PLACEHOLDER_EN — Gourmet Vanilla from Madagascar.]",
-      "tagline": "[PLACEHOLDER_EN — 2025 Harvest — black pods, extracts and powders for bakers, pastry chefs and restaurateurs. Direct selection from Sava cooperatives, quality control on arrival in Marseille.]",
+      "tagline": "[PLACEHOLDER_EN — 2025 Harvest — black pods, caviar and powder for bakers, pastry chefs and restaurateurs. Direct selection from Sava cooperatives, quality control on receipt. Delivery to France, Europe, USA and Canada.]",
       "cta_primaire": "[PLACEHOLDER_EN — Request a sample]",
       "cta_secondaire": "[PLACEHOLDER_EN — See our grades →]"
     },

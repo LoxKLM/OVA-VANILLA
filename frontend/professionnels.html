@@ -61,7 +61,7 @@
       <h1 class="page-hero__title" style="margin:12px 0 16px">Professionnels</h1>
       <p class="page-hero__subtitle">
         Boulangers, pâtissiers, chocolatiers, restaurateurs, distributeurs —
-        Ova Vanilla vous approvisionne directement depuis Marseille.
+        Ova Vanilla vous approvisionne directement depuis la France.
       </p>
       <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:32px">
         <a href="#devis"      class="btn btn--gold">Demander un devis</a>
@@ -98,7 +98,7 @@
           </div>
           <div class="pros-tableau__ligne">
             <span class="pros-tableau__label">Zone de livraison</span>
-            <span class="pros-tableau__valeur">France &amp; International (selon volume)</span>
+            <span class="pros-tableau__valeur">France, Europe, États-Unis, Canada</span>
           </div>
           <div class="pros-tableau__ligne">
             <span class="pros-tableau__label">Tarification</span>
@@ -203,10 +203,9 @@
             <label class="form__label form__label--light" for="devis-grade">Grade souhaité *</label>
             <select class="form__select" id="devis-grade" name="grade" required>
               <option value="" disabled selected>Sélectionner…</option>
-              <option value="tk-noire">Gourmet TK Noire (Grade A)</option>
-              <option value="split">Split Gourmet (Grade B)</option>
+              <option value="gourmet">Gourmet (Grade A)</option>
+              <option value="caviar">Caviar de Vanille</option>
               <option value="poudre">Poudre de Vanille (pur broyat)</option>
-              <option value="extrait">Extrait Naturel (double fold)</option>
               <option value="plusieurs">Plusieurs grades</option>
               <option value="a-definir">À définir ensemble</option>
             </select>
@@ -303,8 +302,8 @@
             <label class="form__label" for="ech-grade">Grade souhaité *</label>
             <select class="form__select" id="ech-grade" name="grade" required>
               <option value="" disabled selected>Sélectionner…</option>
-              <option value="tk-noire">Gourmet TK Noire (Grade A)</option>
-              <option value="split">Split Gourmet (Grade B)</option>
+              <option value="gourmet">Gourmet (Grade A)</option>
+              <option value="caviar">Caviar de Vanille</option>
               <option value="poudre">Poudre de Vanille</option>
             </select>
             <span class="form__error">Veuillez sélectionner un grade.</span>
@@ -315,7 +314,7 @@
         <div class="form__group">
           <label class="form__label" for="ech-adresse">Adresse de livraison *</label>
           <input class="form__input" type="text" id="ech-adresse" name="adresse"
-                 required placeholder="12 rue de la République, 13001 Marseille"
+                 required placeholder="12 rue de la République, 75001 Paris"
                  autocomplete="street-address">
           <span class="form__error">Ce champ est obligatoire.</span>
         </div>
