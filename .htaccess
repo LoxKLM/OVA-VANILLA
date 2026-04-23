@@ -1,6 +1,6 @@
 # .htaccess — Ova Vanilla
-# Remplace les en-têtes de sécurité Flask.
-# Sert frontend/ comme racine web, conserve webhook.php, robots.txt et sitemap.xml à la racine.
+# Apache / Hostinger shared hosting
+# Ordre : HTTPS → URLs propres → sécurité → routage → cache → gzip
 
 Options -Indexes -MultiViews
 ServerSignature Off
@@ -16,31 +16,45 @@ ServerSignature Off
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 </IfModule>
 
-# ── Routage et HTTPS ──────────────────────────────────────────────────────────
+# ── Réécriture d'URLs ─────────────────────────────────────────────────────────
 <IfModule mod_rewrite.c>
     RewriteEngine On
+    RewriteBase /
 
-    # Forcer HTTPS
+    # 1. Forcer HTTPS — doit être en premier
     RewriteCond %{HTTPS} off
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-    # Fichiers à la racine accessibles directement
+    # 2. Fichiers à la racine — pass-through (pas de réécriture vers frontend/)
     RewriteRule ^webhook\.php$ - [L]
     RewriteRule ^robots\.txt$ - [L]
     RewriteRule ^sitemap\.xml$ - [L]
     RewriteRule ^\.well-known/ - [L]
 
-    # Bloquer l'accès aux logs et scripts internes
+    # 3. Bloquer l'accès aux fichiers internes sensibles
     RewriteRule ^(deploy|webhook)\.log$ - [F,L]
     RewriteRule ^deploy\.sh$ - [F,L]
 
-    # Racine → index.html du frontend
+    # 4. Supprimer l'extension .html — redirection 301 vers URL propre
+    #    /contact.html   → /contact
+    #    /nos-vanilles.html → /nos-vanilles
+    RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+    RewriteRule ^ /%1 [R=301,L]
+
+    # 5. Racine → frontend/index.html
     RewriteRule ^$ frontend/index.html [L]
 
-    # Toute autre requête → frontend/ si le fichier n'existe pas à la racine
+    # 6. URL propre → frontend/page.html (si le fichier correspondant existe)
+    #    /contact        → frontend/contact.html
+    #    /en/index       → frontend/en/index.html
+    RewriteCond %{DOCUMENT_ROOT}/frontend/$1.html -f
+    RewriteRule ^([^.]+)$ frontend/$1.html [L]
+
+    # 7. Fallback — assets et tout le reste → frontend/
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.+)$ frontend/$1 [L]
+
 </IfModule>
 
 # ── Cache statique ────────────────────────────────────────────────────────────
@@ -53,6 +67,7 @@ ServerSignature Off
     ExpiresByType image/png               "access plus 6 months"
     ExpiresByType image/jpeg              "access plus 6 months"
     ExpiresByType image/webp              "access plus 6 months"
+    ExpiresByType video/mp4               "access plus 6 months"
     ExpiresByType font/woff2              "access plus 1 year"
     ExpiresByType application/json        "access plus 1 hour"
 </IfModule>
