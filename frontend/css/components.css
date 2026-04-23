@@ -1,7 +1,308 @@
 /* ────────────────────────────────────────────────────────────────────────────
    components.css — Ova Vanilla
-   Composants réutilisables : boutons, cartes, formulaires, badges, pullquote
+   Composants réutilisables : navigation, boutons, cartes, formulaires
    ──────────────────────────────────────────────────────────────────────────── */
+
+/* ══════════════════════════════════════════════════════════════════════════
+   NAVIGATION — .nav
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ─── Barre principale ─────────────────────────────────────────────────── */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--pad-x);
+  background-color: transparent;
+  transition:
+    background-color 0.4s ease,
+    backdrop-filter 0.4s ease,
+    -webkit-backdrop-filter 0.4s ease;
+}
+
+/* Fond opaque après 80px de scroll */
+.nav--scrolled {
+  background-color: rgba(247, 241, 229, 0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ─── Logo ─────────────────────────────────────────────────────────────── */
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+  color: var(--ink);
+}
+
+.nav__logo-icon {
+  width: 26px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+.nav__logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.nav__logo-ova {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.1;
+}
+
+.nav__logo-vanilla {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 300;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-top: 2px;
+}
+
+/* ─── Liens ────────────────────────────────────────────────────────────── */
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 2.2vw, 34px);
+}
+
+.nav__link {
+  position: relative;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  padding-bottom: 3px;
+}
+
+/* Trait or — glisse de gauche à droite au hover */
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.nav__link:hover::after,
+.nav__link--active::after {
+  width: 100%;
+}
+
+/* ─── Zone droite ──────────────────────────────────────────────────────── */
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+/* ─── CTA "Demander un devis" ──────────────────────────────────────────── */
+
+.nav__cta {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background-color: var(--ink);
+  padding: 10px 24px;
+  text-decoration: none;
+  border: 1px solid var(--ink);
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.nav__cta:hover {
+  background-color: var(--gold);
+  border-color: var(--gold);
+}
+
+/* ─── Switcher langue ──────────────────────────────────────────────────── */
+
+.nav__lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav__lang-link {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.nav__lang-link--active {
+  color: var(--ink);
+}
+
+.nav__lang-link:not(.nav__lang-link--active) {
+  color: var(--gold);
+}
+
+.nav__lang-sep {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  color: var(--ink);
+  opacity: 0.25;
+  user-select: none;
+}
+
+/* ─── Burger ───────────────────────────────────────────────────────────── */
+
+.nav__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav__burger span {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background-color: var(--ink);
+  transform-origin: center;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* Animation trois traits → croix */
+.nav__burger--open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav__burger--open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav__burger--open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+/* ─── Menu mobile overlay ──────────────────────────────────────────────── */
+
+.nav__mobile {
+  position: fixed;
+  inset: 0;
+  z-index: 990;
+  background-color: var(--deep);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition:
+    opacity 0.35s ease,
+    visibility 0.35s ease,
+    transform 0.35s ease;
+}
+
+.nav__mobile--open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav__mobile-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.nav__mobile-link {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 7vw, 36px);
+  font-weight: 400;
+  color: var(--cream);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  padding: 10px 0;
+  transition: color var(--transition-fast);
+}
+
+.nav__mobile-link:hover {
+  color: var(--gold);
+}
+
+.nav__mobile-cta {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cream);
+  border: 1px solid rgba(184, 147, 90, 0.5);
+  padding: 12px 36px;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  margin-bottom: 28px;
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.nav__mobile-cta:hover {
+  background-color: var(--gold);
+  border-color: var(--gold);
+}
+
+.nav__mobile-lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ─── Responsive — masquer desktop, afficher burger ────────────────────── */
+
+@media (max-width: 900px) {
+  .nav__links,
+  .nav__cta,
+  .nav__lang-switcher {
+    display: none;
+  }
+
+  .nav__burger {
+    display: flex;
+  }
+}
 
 /* ══════════════════════════════════════════════════════════════════════════
    BOUTONS

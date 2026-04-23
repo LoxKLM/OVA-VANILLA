@@ -57,43 +57,58 @@
 
 <!-- NAVIGATION -->
 <header class="nav" id="nav" role="banner">
+
+  <!-- Logo -->
   <a href="./" class="nav__logo" aria-label="Ova Vanilla — Accueil">
-    <img src="./assets/logo.png" alt="Ova Vanilla — Vanille Gourmet de Madagascar" width="53" height="40" loading="eager">
+    <svg class="nav__logo-icon" viewBox="0 0 28 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M14 3C9.5 3 6 7 6 12C6 22 10 31 14 37C18 31 22 22 22 12C22 7 18.5 3 14 3Z" stroke="currentColor" stroke-width="1.25"/>
+      <line x1="14" y1="11" x2="14" y2="32" stroke="#B8935A" stroke-width="1" stroke-linecap="round"/>
+    </svg>
+    <span class="nav__logo-text">
+      <span class="nav__logo-ova">Ova</span>
+      <span class="nav__logo-vanilla">VANILLA</span>
+    </span>
   </a>
+
+  <!-- Liens principaux -->
   <nav class="nav__links" aria-label="Navigation principale">
-    <a href="./la-maison"      class="nav__link nav__link--active">La Maison</a>
+    <a href="./la-maison"      class="nav__link">La Maison</a>
     <a href="./nos-vanilles"   class="nav__link">Nos Vanilles</a>
     <a href="./origines"       class="nav__link">Origines</a>
     <a href="./professionnels" class="nav__link">Professionnels</a>
     <a href="./contact"        class="nav__link">Contact</a>
   </nav>
+
+  <!-- Zone droite -->
   <div class="nav__right">
+    <a href="./professionnels#devis" class="nav__cta">Demander un devis ↗</a>
     <div class="nav__lang-switcher" role="navigation" aria-label="Langue">
-      <button class="nav__lang nav__lang--active" onclick="switchLang('fr')" aria-label="Français">FR</button>
+      <a href="./" class="nav__lang-link nav__lang-link--active" lang="fr" hreflang="fr">FR</a>
       <span class="nav__lang-sep" aria-hidden="true">/</span>
-      <button class="nav__lang" onclick="switchLang('en')" aria-label="English">EN</button>
+      <a href="./en/" class="nav__lang-link" lang="en" hreflang="en">EN</a>
     </div>
-    <a href="./professionnels#devis" class="btn btn--nav">Demander un devis ↗</a>
     <button class="nav__burger" id="nav-burger"
             aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-mobile">
       <span></span><span></span><span></span>
     </button>
   </div>
+
 </header>
 
-<div class="nav__mobile" id="nav-mobile" role="dialog" aria-modal="true" aria-label="Menu">
-  <a href="./la-maison"      class="nav__mobile-link">La Maison</a>
-  <a href="./nos-vanilles"   class="nav__mobile-link">Nos Vanilles</a>
-  <a href="./origines"       class="nav__mobile-link">Origines</a>
-  <a href="./professionnels" class="nav__mobile-link">Professionnels</a>
-  <a href="./contact"        class="nav__mobile-link">Contact</a>
-  <a href="./professionnels#devis" class="btn btn--primary btn--lg" style="margin-top:16px">
-    Demander un devis ↗
-  </a>
+<!-- Menu mobile -->
+<div class="nav__mobile" id="nav-mobile" role="dialog" aria-modal="true" aria-label="Menu de navigation">
+  <nav class="nav__mobile-links" aria-label="Navigation mobile">
+    <a href="./la-maison"      class="nav__mobile-link">La Maison</a>
+    <a href="./nos-vanilles"   class="nav__mobile-link">Nos Vanilles</a>
+    <a href="./origines"       class="nav__mobile-link">Origines</a>
+    <a href="./professionnels" class="nav__mobile-link">Professionnels</a>
+    <a href="./contact"        class="nav__mobile-link">Contact</a>
+  </nav>
+  <a href="./professionnels#devis" class="nav__mobile-cta">Demander un devis ↗</a>
   <div class="nav__mobile-lang">
-    <button class="nav__lang nav__lang--active" onclick="switchLang('fr')">FR</button>
+    <a href="./" class="nav__lang-link nav__lang-link--active" lang="fr" hreflang="fr">FR</a>
     <span class="nav__lang-sep" aria-hidden="true">/</span>
-    <button class="nav__lang" onclick="switchLang('en')">EN</button>
+    <a href="./en/" class="nav__lang-link" lang="en" hreflang="en">EN</a>
   </div>
 </div>
 

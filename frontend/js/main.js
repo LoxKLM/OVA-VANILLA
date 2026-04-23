@@ -12,7 +12,7 @@
 
   function gererNavScroll() {
     if (!nav) return;
-    if (window.scrollY > 60) {
+    if (window.scrollY > 80) {
       nav.classList.add('nav--scrolled');
     } else {
       nav.classList.remove('nav--scrolled');
