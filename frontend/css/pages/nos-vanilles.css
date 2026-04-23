@@ -120,4 +120,19 @@
   .grades-grille {
     grid-template-columns: 1fr;
   }
+
+  /* Réduction du hero sur mobile */
+  .page-hero {
+    padding-top: 56px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grade-filtre {
+    padding: 10px 16px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
 }

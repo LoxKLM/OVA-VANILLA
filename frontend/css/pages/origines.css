@@ -311,4 +311,20 @@
   .origines-etapes {
     grid-template-columns: 1fr;
   }
+
+  /* Réduction du hero sur mobile */
+  .page-hero {
+    padding-top: 56px;
+    padding-bottom: 48px;
+  }
+
+  /* Image portrait → format moins haut sur mobile */
+  .origines-photo-frame {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Pullquote — padding réduit */
+  .origines-pullquote {
+    padding: 56px 0;
+  }
 }

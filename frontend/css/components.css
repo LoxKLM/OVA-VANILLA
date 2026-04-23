@@ -161,8 +161,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   background: none;
   border: none;
   cursor: pointer;
@@ -867,5 +867,41 @@ body {
   .pullquote {
     padding-left: var(--space-sm);
     margin: var(--space-md) 0;
+  }
+
+  /* Taille minimale tactile 44px */
+  .btn {
+    min-height: 44px;
+  }
+
+  .nav__mobile-cta {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* ── Mobile 600px — corps carte ────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .grade-card__body {
+    padding: var(--space-sm);
+  }
+
+  .grade-card__name {
+    font-size: 1.25rem;
+  }
+}
+
+/* ── Mobile 480px — boutons ─────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .btn--lg {
+    padding: 14px 20px;
+    font-size: 0.8125rem;
+  }
+
+  .btn {
+    white-space: normal;
+    text-align: center;
   }
 }

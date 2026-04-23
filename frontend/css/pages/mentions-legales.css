@@ -126,3 +126,22 @@
 .mentions-back .link-arrow:hover {
   color: var(--gold);
 }
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .mentions-main {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mentions-main {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .mentions-title {
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
+  }
+}

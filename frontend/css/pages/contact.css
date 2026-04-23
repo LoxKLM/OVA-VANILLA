@@ -259,6 +259,14 @@
   }
 }
 
+@media (max-width: 600px) {
+  /* Réduction du hero sur mobile */
+  .contact-hero {
+    padding-top: 56px;
+    padding-bottom: 48px;
+  }
+}
+
 @media (max-width: 560px) {
   .contact-form__row {
     grid-template-columns: 1fr;
@@ -266,5 +274,13 @@
 
   .contact-form {
     padding: var(--space-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  /* Hauteur tactile sur le bouton de soumission */
+  .contact-form__submit .btn {
+    width: 100%;
+    justify-content: center;
   }
 }

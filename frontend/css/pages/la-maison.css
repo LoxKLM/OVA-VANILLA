@@ -296,4 +296,24 @@
   .maison-chiffres__inner {
     flex-direction: column;
   }
+
+  /* Réduction du hero sur mobile */
+  .page-hero {
+    padding-top: 56px;
+    padding-bottom: 48px;
+  }
+
+  /* Image portrait → format moins haut sur mobile */
+  .maison-photo-frame {
+    aspect-ratio: 4 / 3;
+  }
+
+  .maison-cta__btns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .maison-cta__btns .btn {
+    justify-content: center;
+  }
 }

@@ -539,3 +539,44 @@
     padding: 12px 12px;
   }
 }
+
+/* ── Mobile 600px ───────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  /* Réduction du hero sur mobile */
+  .page-hero {
+    padding-top: 56px;
+    padding-bottom: 48px;
+  }
+
+  /* CTA hero — empilés */
+  .page-hero__content > div[style*="flex"] {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* ── Mobile 480px ───────────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  /* Tableau conditions — label / valeur en colonne */
+  .pros-tableau__ligne {
+    flex-direction: column;
+    gap: 2px;
+    padding: 14px 16px;
+  }
+
+  .pros-tableau__valeur {
+    text-align: left;
+  }
+
+  /* Chiffres B2B — 2 colonnes max */
+  .pros-intro__chiffres {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Tabs formulaire — hauteur tactile */
+  .form-tab {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+}
