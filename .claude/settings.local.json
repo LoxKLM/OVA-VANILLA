@@ -3,7 +3,14 @@
     "allow": [
       "Bash(sed -i 's|href=\"\\\\.\\\\./index\\\\.html\"|href=\"../\"|g' en/index.html)",
       "Bash(sed -i 's|href=\"\\\\.\\\\./\\\\\\([a-z-]*\\\\\\)\\\\.html|href=\"../\\\\1|g' en/index.html)",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(node -e \"const s=require\\('sharp'\\); console.log\\('sharp ok', s.versions\\)\")",
+      "Bash(node -e \"require\\('canvas'\\)\")",
+      "Bash(node -e \"require\\('jimp'\\)\")",
+      "Bash(where magick *)",
+      "Bash(where convert *)",
+      "Bash(where ffmpeg *)",
+      "Bash(npm list *)"
     ]
   }
 }

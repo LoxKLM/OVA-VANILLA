@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(node -e \"const j=require\\('jimp'\\); console.log\\(Object.keys\\(j\\).slice\\(0,10\\)\\); const p=require\\('./node_modules/jimp/package.json'\\); console.log\\('version:', p.version\\)\")",
+      "Bash(node -e ' *)"
+    ]
+  }
+}
