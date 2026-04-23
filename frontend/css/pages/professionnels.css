@@ -20,15 +20,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.22;
-  filter: contrast(1.1);
+  opacity: 0.58;
+  filter: contrast(1.05);
 }
 
 .page-hero__bg::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, var(--deep) 40%, rgba(15,26,19,0.55) 100%);
+  background: linear-gradient(to right, rgba(15,26,19,0.72) 28%, rgba(15,26,19,0.32) 100%);
 }
 
 .page-hero__content {
@@ -63,6 +63,45 @@
   opacity: 0.7;
   max-width: 52ch;
   line-height: 1.7;
+}
+
+/* ── Tableau conditions (div-based) ── */
+.pros-tableau {
+  border: 1px solid var(--gold-20);
+  background-color: var(--cream);
+}
+
+.pros-tableau__ligne {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-sm);
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--gold-20);
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  transition: background-color var(--transition-fast);
+}
+
+.pros-tableau__ligne:last-child {
+  border-bottom: none;
+}
+
+.pros-tableau__ligne:hover {
+  background-color: var(--paper);
+}
+
+.pros-tableau__label {
+  font-weight: 500;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+
+.pros-tableau__valeur {
+  color: var(--deep);
+  opacity: 0.7;
+  text-align: right;
+  font-weight: 300;
 }
 
 /* ── Intro bande ── */
