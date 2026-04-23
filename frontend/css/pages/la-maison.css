@@ -7,7 +7,7 @@
   position: relative;
   background-color: var(--deep);
   color: var(--cream);
-  padding: calc(var(--space-section) + var(--nav-height)) 0 var(--space-section);
+  padding: var(--space-section) 0 var(--space-section);
   overflow: hidden;
 }
 

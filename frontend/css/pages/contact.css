@@ -5,7 +5,7 @@
 /* ── Hero sobre ── */
 .contact-hero {
   background-color: var(--deep);
-  padding: calc(var(--space-section) + var(--nav-height)) 0 var(--space-section);
+  padding: var(--space-section) 0 var(--space-section);
 }
 
 .page-hero__eyebrow {

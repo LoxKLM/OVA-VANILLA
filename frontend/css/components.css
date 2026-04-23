@@ -9,29 +9,23 @@
 
 /* ─── Barre principale ─────────────────────────────────────────────────── */
 
+body {
+  padding-top: 68px;
+}
+
 .nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  height: var(--nav-height);
+  height: 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--pad-x);
-  background-color: transparent;
-  transition:
-    background-color 0.4s ease,
-    backdrop-filter 0.4s ease,
-    -webkit-backdrop-filter 0.4s ease;
-}
-
-/* Fond opaque après 80px de scroll */
-.nav--scrolled {
-  background-color: rgba(247, 241, 229, 0.97);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-color: var(--paper);
+  border-bottom: 1px solid rgba(31, 53, 40, 0.12);
 }
 
 /* ─── Logo ─────────────────────────────────────────────────────────────── */

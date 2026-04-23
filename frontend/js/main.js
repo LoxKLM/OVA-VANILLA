@@ -6,21 +6,9 @@
 (function () {
   'use strict';
 
-  /* ── Navigation — comportement au scroll ──────────────────────────────── */
+  /* ── Référence navbar — calcul offset pour smooth scroll ─────────────── */
 
   const nav = document.getElementById('nav');
-
-  function gererNavScroll() {
-    if (!nav) return;
-    if (window.scrollY > 80) {
-      nav.classList.add('nav--scrolled');
-    } else {
-      nav.classList.remove('nav--scrolled');
-    }
-  }
-
-  window.addEventListener('scroll', gererNavScroll, { passive: true });
-  gererNavScroll(); /* Initialisation au chargement */
 
 
   /* ── Menu mobile — burger ────────────────────────────────────────────── */

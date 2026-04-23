@@ -4,7 +4,7 @@
 
 .mentions-main {
   background-color: var(--paper);
-  padding: calc(var(--space-section) + var(--nav-height)) 0 var(--space-section);
+  padding: var(--space-section) 0 var(--space-section);
   min-height: 70vh;
 }
 
