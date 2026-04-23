@@ -134,13 +134,16 @@
      ════════════════════════════════════════════════════════════════════════ -->
 <section class="hero" id="accueil" aria-label="Ova Vanilla — Maison de négoce">
 
-  <!-- Fond photographique sombre -->
+  <!-- Fond vidéo — fallback image pour reduced-motion et navigateurs anciens -->
   <div class="hero__bg" aria-hidden="true">
-    <img src="./assets/photos/hero-gousses.jpg"
-         alt="Gousses de vanille noire Gourmet — Ova Vanilla"
-         class="hero__img"
-         loading="eager"
-         fetchpriority="high">
+    <video class="hero__video"
+           autoplay muted loop playsinline
+           poster="./assets/photos/gousses-vanille-noire-gourmet-madagascar-macro.png">
+      <source src="./assets/videos/header-vanille-ova-vanilla-madagascar.mp4" type="video/mp4">
+    </video>
+    <img src="./assets/photos/gousses-vanille-noire-gourmet-madagascar-macro.png"
+         alt=""
+         class="hero__video-fallback">
     <div class="hero__overlay"></div>
   </div>
 
@@ -206,7 +209,7 @@
       <!-- Fiche 1 — Gourmet TK Noire -->
       <article class="grade-card fade-up" id="tk-noire">
         <div class="grade-card__img-wrap">
-          <img src="./assets/photos/grade-tk-noire.jpg"
+          <img src="./assets/photos/gousses-vanille-noire-gourmet-madagascar-macro.png"
                alt="Gousses de vanille noire Gourmet TK — Lot SV-254, récolte 2025"
                class="grade-card__img" loading="lazy">
           <div class="grade-card__img-placeholder" aria-hidden="true">
@@ -394,8 +397,8 @@
 
       <!-- Photo demi-écran droite -->
       <div class="origines-section__img-wrap fade-up fade-up--d1">
-        <img src="./assets/photos/sava-landscape.jpg"
-             alt="Paysage de la région Sava, nord-est de Madagascar — berceau de la vanille Bourbon"
+        <img src="./assets/photos/selection-gousses-vanille-noire-sava-madagascar.png"
+             alt="Sélection manuelle des gousses de vanille noire — coopérative de la Sava, Madagascar"
              class="origines-section__img"
              loading="lazy">
         <p class="origines-section__img-caption">Région Sava — Sambava, Madagascar</p>
@@ -483,8 +486,8 @@
 
       <!-- Image -->
       <div class="maison-section__img-wrap fade-up fade-up--d1">
-        <img src="./assets/photos/marseille-entrepot.jpg"
-             alt="Contrôle des lots de vanille à Marseille — Ova Vanilla"
+        <img src="./assets/photos/lot-vanille-gourmet-conditionnement-export-madagascar.png"
+             alt="Lot de gousses de vanille Gourmet conditionné pour export — Ova Vanilla, Madagascar"
              class="maison-section__img"
              loading="lazy">
       </div>
